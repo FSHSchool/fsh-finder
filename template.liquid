@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FSH Finder 🐟🔭</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous">
+
+    <style>
+        .ig-info a:link, .ig-info a:hover, .ig-info a:active { color: #888; text-decoration: underline; }
+        .ig-info a:visited { color: #8b75ac; text-decoration: underline; }
+        .ig-info { color: #888; }
+        .ig-info img { opacity: 0.4; }
+    </style>
+
+</head>
+<body class="py-4">
+<div class="container-fluid">
+    <h1>FSH Finder 🐟🔭</h1>
+    <p>Finds GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code. Please see <a href="https://github.com/FSHSchool/fsh-finder/README.md">the README</a> for more details. You can also see the <a href="https://github.com/FSHSchool/fsh-finder/">source code</a> and <a href="https://github.com/FSHSchool/fsh-finder/issues">issue tracking for bugs, etc</a>.</p>
+    <p>Other formats: <a href="fshy_repos.json">JSON</a> | <a href="fshy_repos.txt">List of repo URLs implementing FSH</a> (<code>.txt</code>)</p>
+    <p><strong>Is your IG missing?</strong> The easiest way to add it is to <a href="https://github.com/FHIR/auto-ig-builder">register it for CI builds on build.fhir.org</a>. You can also submit a pull request to add your IG's GitHub repository to the list of manually crawled sources. You can also have every repository in your GitHub org/username manually crawled if you have multiple IGs using FSH. Currently the manually cralwed sources are defined in <a href="https://github.com/FSHSchool/fsh-finder/blob/main/lib/repo_sources.rb">this file</a>. If your IG is registered for CI builds or is already covered by the manual crawl sources, and it still does not appear, please <a href="https://github.com/FSHSchool/fsh-finder/issues">log an issue</a>. </p>
+    <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0.</p>
+    <p><b>Last updated:</b> <time datetime="{{ updated }}">{{ updated }}</time></p>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">IG</th>
+            <th scope="col">FSH?</th>
+            <th scope="col">FSH: Profile?</th>
+            <th scope="col">FSH: Instance?</th>
+            <th scope="col">FSH: OD?</th>
+            <th scope="col">FSH: SD?</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for repo in repos %}
+        <tr>
+            <th scope="row">{{ forloop.index }}</th>
+            <td>
+                <strong>{{ repo.ig_title }}</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/{{ repo.repo_owner }}/{{ repo.repo_name }}">{{ repo.repo_owner }} / <strong>{{ repo.repo_name }}</strong></a> updated <time datetime="{{ repo.updated_at }}">{{ repo.updated_at }}</time>{% if repo.ci_build_url %} [<a href="{{ repo.ci_build_url }}">CI build</a>]{% endif %}
+                </div>
+            </td>
+            <td>
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch %}
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="{{ repo.feature_assessments.FeatureSushiOne.branches_with_feature | join: ", " }}">1.0</span>
+                {% elsif repo.feature_assessments.FeatureSushiOld.any_branch %}
+                    <span class="badge badge-warning">Old</span>
+                {% else %}
+                <span class="badge badge-danger">No</span>
+                {% endif %}
+            </td>
+            <td>
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
+                {% if repo.feature_assessments.FeaturesProfile.any_branch %}
+                <span class="badge badge-success">Yes</span>
+                {% else %}
+                <span class="badge badge-danger">No</span>
+                {% endif %}
+                {% endif %}
+            </td>
+            <td>
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
+                {% if repo.feature_assessments.FeaturesInstances.any_branch %}
+                <span class="badge badge-success">Yes</span>
+                {% else %}
+                <span class="badge badge-danger">No</span>
+                {% endif %}
+                {% endif %}
+            </td>
+            <td>
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
+                {% if repo.feature_assessments.FeaturesOperationDefinition.any_branch %}
+                <span class="badge badge-success">Yes</span>
+                {% else %}
+                <span class="badge badge-danger">No</span>
+                {% endif %}
+                {% endif %}
+            </td>
+            <td>
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
+                {% if repo.feature_assessments.FeaturesStructureDefinition.any_branch %}
+                <span class="badge badge-success">Yes</span>
+                {% else %}
+                <span class="badge badge-danger">No</span>
+                {% endif %}
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <footer class="footer text-center">
+        <div class="container">
+            <a class="text-muted" href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md#license">Copyright 2020 The MITRE Corporation</a>. <span class="text-muted">Approved for Public Release; Distribution Unlimited. Public Release Case Number 16-1988.</span>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA==" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        jQuery("time").timeago();
+    })
+</script>
+</body>
+</html>
