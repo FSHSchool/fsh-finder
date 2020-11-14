@@ -12,17 +12,66 @@
         .ig-info a:visited { color: #8b75ac; text-decoration: underline; }
         .ig-info { color: #888; }
         .ig-info img { opacity: 0.4; }
+        header h1 {
+            font-size: 2rem;
+        }
+        header {
+            margin-bottom: 1.25rem;
+        }
+        header svg {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            vertical-align: text-top;
+        }
+
+
+        .callout {
+            padding: 1.25rem;
+            border: 1px solid #eee;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            margin-bottom: 1.25rem;
+        }
+        .callout-warning {
+            border-left-color: #f0ad4e;
+        }
+        .callout p, .callout ul {
+            margin-bottom: 0;
+        }
     </style>
 
 </head>
-<body class="py-4">
+<body>
+
+<header class="navbar navbar-expand flex-column flex-md-row shadow-sm">
+    <h1 class="my-0 mr-md-auto">FSH Finder 🐟🔭</h1>
+
+    <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other formats
+            </a>
+            <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item" href="fshy_repos.json">JSON</a>
+                <a class="dropdown-item" href="fshy_repos.txt">Plain text</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link pl-3 pr-3 mx-1 py-3 my-n2 text-dark" href="https://github.com/FSHSchool/fsh-finder/" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg> Source code</a>
+        </li>
+    </ul>
+
+    <a class="btn btn-small btn-outline-success" href="https://github.com/FSHSchool/fsh-finder/issues">Report a problem</a>
+</header>
+
 <div class="container-fluid">
-    <h1>FSH Finder 🐟🔭</h1>
-    <p>Finds GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code. Please see <a href="https://github.com/FSHSchool/fsh-finder/README.md">the README</a> for more details. You can also see the <a href="https://github.com/FSHSchool/fsh-finder/">source code</a> and <a href="https://github.com/FSHSchool/fsh-finder/issues">issue tracking for bugs, etc</a>.</p>
-    <p>Other formats: <a href="fshy_repos.json">JSON</a> | <a href="fshy_repos.txt">List of repo URLs implementing FSH</a> (<code>.txt</code>)</p>
-    <p><strong>Is your IG missing?</strong> The easiest way to add it is to <a href="https://github.com/FHIR/auto-ig-builder">register it for CI builds on build.fhir.org</a>. You can also submit a pull request to add your IG's GitHub repository to the list of manually crawled sources. You can also have every repository in your GitHub org/username manually crawled if you have multiple IGs using FSH. Currently the manually cralwed sources are defined in <a href="https://github.com/FSHSchool/fsh-finder/blob/main/lib/repo_sources.rb">this file</a>. If your IG is registered for CI builds or is already covered by the manual crawl sources, and it still does not appear, please <a href="https://github.com/FSHSchool/fsh-finder/issues">log an issue</a>. </p>
+    <div class="alert alert-secondary" role="alert">
+        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong> Please see <a href="https://github.com/FSHSchool/fsh-finder/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
+    </div>
+
     <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0.</p>
-    <p><b>Last updated:</b> <time datetime="{{ updated }}">{{ updated }}</time></p>
     <table class="table table-sm table-striped">
         <thead class="thead-dark">
         <tr>
@@ -57,36 +106,36 @@
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
                 {% if repo.feature_assessments.FeaturesProfile.any_branch %}
-                <span class="badge badge-success">Yes</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
                 {% else %}
-                <span class="badge badge-danger">No</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
                 {% endif %}
                 {% endif %}
             </td>
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesInstances.any_branch %}
-                <span class="badge badge-success">Yes</span>
+                {% if repo.feature_assessments.FeaturesInstance.any_branch %}
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
                 {% else %}
-                <span class="badge badge-danger">No</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
                 {% endif %}
                 {% endif %}
             </td>
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
                 {% if repo.feature_assessments.FeaturesOperationDefinition.any_branch %}
-                <span class="badge badge-success">Yes</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
                 {% else %}
-                <span class="badge badge-danger">No</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
                 {% endif %}
                 {% endif %}
             </td>
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
                 {% if repo.feature_assessments.FeaturesStructureDefinition.any_branch %}
-                <span class="badge badge-success">Yes</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
                 {% else %}
-                <span class="badge badge-danger">No</span>
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
                 {% endif %}
                 {% endif %}
             </td>
@@ -94,6 +143,16 @@
         {% endfor %}
         </tbody>
     </table>
+    <div class="callout callout-warning">
+        <h5>Is your IG missing?</h5>
+        <p>
+        <ul>
+            <li>The easiest way to add it is to <a href="https://github.com/FHIR/auto-ig-builder">register it for CI builds on build.fhir.org</a>.</li>
+            <li>You can also submit a pull request to add your IG's GitHub repository to the list of manually crawled sources. You can also have every repository in your GitHub org/username manually crawled if you have multiple IGs using FSH. Currently the manually crawled sources are defined <a href="https://github.com/FSHSchool/fsh-finder/blob/main/lib/repo_sources.rb#L57-L78">here</a>.</li>
+            <li>If your IG is registered for CI builds or is already covered by the manual crawl sources, and it still does not appear, please <a href="https://github.com/FSHSchool/fsh-finder/issues">log an issue</a>.</li>
+        </ul>
+        </p>
+    </div>
     <footer class="footer text-center">
         <div class="container">
             <a class="text-muted" href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md#license">Copyright 2020 The MITRE Corporation</a>. <span class="text-muted">Approved for Public Release; Distribution Unlimited. Public Release Case Number 16-1988.</span>
