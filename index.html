@@ -1,0 +1,2054 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FSH Finder 🐟🔭</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous">
+
+    <style>
+        .ig-info a:link, .ig-info a:hover, .ig-info a:active { color: #888; text-decoration: underline; }
+        .ig-info a:visited { color: #8b75ac; text-decoration: underline; }
+        .ig-info { color: #888; }
+        .ig-info img { opacity: 0.4; }
+        header h1 {
+            font-size: 2rem;
+        }
+        header {
+            margin-bottom: 1.25rem;
+        }
+        header svg {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            vertical-align: text-top;
+        }
+
+
+        .callout {
+            padding: 1.25rem;
+            border: 1px solid #eee;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            margin-bottom: 1.25rem;
+        }
+        .callout-warning {
+            border-left-color: #f0ad4e;
+        }
+        .callout p, .callout ul {
+            margin-bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="navbar navbar-expand flex-column flex-md-row shadow-sm">
+    <h1 class="my-0 mr-md-auto">FSH Finder 🐟🔭</h1>
+
+    <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other formats
+            </a>
+            <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                <a class="dropdown-item" href="fshy_repos.json">JSON</a>
+                <a class="dropdown-item" href="fshy_repos.txt">Plain text</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link pl-3 pr-3 mx-1 py-3 my-n2 text-dark" href="https://github.com/FSHSchool/fsh-finder/" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg> Source code</a>
+        </li>
+    </ul>
+
+    <a class="btn btn-small btn-outline-success" href="https://github.com/FSHSchool/fsh-finder/issues">Report a problem</a>
+</header>
+
+<div class="container-fluid">
+    <div class="alert alert-secondary" role="alert">
+        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong> Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="2020-11-15 22:12:18 -0500">2020-11-15 22:12:18 -0500</time>.
+    </div>
+
+    <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0.</p>
+    <table class="table table-sm table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Implementation Guide</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="FHIR Shorthand version" data-content="Identifies repositories where any branch includes FHIR Shorthand (FSH). Differentiates between repositories that support SUSHI >= 1.0 (released November 13, 2020) and prior versions.">FSH Version</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a Profile in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a Profile.">FSH: Profiles</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Instance in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Instance of a resource (e.g., for examples of Profiles).">FSH: Instances</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a OperationDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an OperationDefinition resource.">FSH: Operations</th>
+            <!--<th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a StructureDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a StructureDefinition resource.">FSH: SD?</th>-->
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+            <th scope="row">1</th>
+            <td>
+                <strong>US Core Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/US-Core">HL7 / <strong>US-Core</strong></a> updated <time datetime="2020-11-16T02:09:35 +0000">2020-11-16T02:09:35 +0000</time> [<a href="https://build.fhir.org/ig/HL7/US-Core">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="fsh_templates_branch">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">2</th>
+            <td>
+                <strong>US Core Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/US-Core-R4">HL7 / <strong>US-Core-R4</strong></a> updated <time datetime="2020-11-16T02:09:35 +0000">2020-11-16T02:09:35 +0000</time> [<a href="https://build.fhir.org/ig/HL7/US-Core-R4">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="fsh_templates_branch">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">3</th>
+            <td>
+                <strong>devdays-covid19-vaccine</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/costateixeira/devdays-covid19-vaccine">costateixeira / <strong>devdays-covid19-vaccine</strong></a> updated <time datetime="2020-11-15T20:48:06 +0000">2020-11-15T20:48:06 +0000</time> [<a href="https://build.fhir.org/ig/costateixeira/devdays-covid19-vaccine">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="main">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">4</th>
+            <td>
+                <strong>WHO Case Reporting for COVID-19 Surveillance</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/openhie/covid-ig">openhie / <strong>covid-ig</strong></a> updated <time datetime="2020-11-14T23:50:05 +0000">2020-11-14T23:50:05 +0000</time> [<a href="https://build.fhir.org/ig/openhie/covid-ig">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="es-working, master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">5</th>
+            <td>
+                <strong>riziv-inami</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/hl7-be/riziv-inami">hl7-be / <strong>riziv-inami</strong></a> updated <time datetime="2020-11-14T21:47:44 +0000">2020-11-14T21:47:44 +0000</time> [<a href="https://build.fhir.org/ig/hl7-be/riziv-inami">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">6</th>
+            <td>
+                <strong>Subscriptions R5 Backport</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-subscription-backport-ig">HL7 / <strong>fhir-subscription-backport-ig</strong></a> updated <time datetime="2020-11-13T20:50:39 +0000">2020-11-13T20:50:39 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">7</th>
+            <td>
+                <strong>HL7 FHIR Implementation Guide: Clinical Genomics Reporting Release 1 - US Realm | STU1</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/genomics-reporting">HL7 / <strong>genomics-reporting</strong></a> updated <time datetime="2020-11-12T19:32:33 +0000">2020-11-12T19:32:33 +0000</time> [<a href="https://build.fhir.org/ig/HL7/genomics-reporting">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="genomics-reporting-fsh-mlt, genomics-reporting-fsh-pw, genomics-reporting-fsh-rpm, master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">8</th>
+            <td>
+                <strong>HL7 FHIR Implementation Guide: minimal Common Oncology Data Elements (mCODE) Release 1 - US Realm | STU1</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-mCODE-ig">HL7 / <strong>fhir-mCODE-ig</strong></a> updated <time datetime="2020-11-10T18:15:52 +0000">2020-11-10T18:15:52 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-mCODE-ig">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="CancerConditionParent-fixup, comorbidity-extension-mk, debug-relative-link-issue, master, med-statement-changes-mk, profile-conformance-mk, supported-operations, tumor-size-profile">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">9</th>
+            <td>
+                <strong>LoincIvdTestCodeMapping</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/livd">HL7 / <strong>livd</strong></a> updated <time datetime="2020-11-06T20:00:11 +0000">2020-11-06T20:00:11 +0000</time> [<a href="https://build.fhir.org/ig/HL7/livd">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="convert-to-fsh, master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">10</th>
+            <td>
+                <strong>hl7-be-fhir-medication</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/hl7-be/hl7-be-fhir-medication">hl7-be / <strong>hl7-be-fhir-medication</strong></a> updated <time datetime="2020-10-30T10:07:44 +0000">2020-10-30T10:07:44 +0000</time> [<a href="https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="master">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">11</th>
+            <td>
+                <strong>fsh-icare</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/standardhealth/fsh-icare">standardhealth / <strong>fsh-icare</strong></a> updated <time datetime="2020-10-01T19:34:15 +0000">2020-10-01T19:34:15 +0000</time> [<a href="https://build.fhir.org/ig/standardhealth/fsh-icare">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="new-publisher">1.0</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">12</th>
+            <td>
+                <strong>Primary Care Practice-to-Practice</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/aehrc/primary-care-data-technical">aehrc / <strong>primary-care-data-technical</strong></a> updated <time datetime="2020-11-16T02:39:14 +0000">2020-11-16T02:39:14 +0000</time> [<a href="https://build.fhir.org/ig/aehrc/primary-care-data-technical">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">13</th>
+            <td>
+                <strong>SMART App Launch</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/smart-app-launch">HL7 / <strong>smart-app-launch</strong></a> updated <time datetime="2020-11-15T06:00:19 +0000">2020-11-15T06:00:19 +0000</time> [<a href="https://build.fhir.org/ig/HL7/smart-app-launch">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">14</th>
+            <td>
+                <strong>Da Vinci Payer Data exchange</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/davinci-epdx">HL7 / <strong>davinci-epdx</strong></a> updated <time datetime="2020-11-13T23:32:48 +0000">2020-11-13T23:32:48 +0000</time> [<a href="https://build.fhir.org/ig/HL7/davinci-epdx">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">15</th>
+            <td>
+                <strong>Da Vinci Prior Authorization Support (PAS) FHIR IG</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/davinci-pas">HL7 / <strong>davinci-pas</strong></a> updated <time datetime="2020-11-13T17:47:24 +0000">2020-11-13T17:47:24 +0000</time> [<a href="https://build.fhir.org/ig/HL7/davinci-pas">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">16</th>
+            <td>
+                <strong>Swedish Base Profiles Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/danka74/basprofiler-r4">danka74 / <strong>basprofiler-r4</strong></a> updated <time datetime="2020-11-13T10:25:01 +0000">2020-11-13T10:25:01 +0000</time> [<a href="https://build.fhir.org/ig/danka74/basprofiler-r4">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">17</th>
+            <td>
+                <strong>HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/cca">HL7NZ / <strong>cca</strong></a> updated <time datetime="2020-11-13T01:22:57 +0000">2020-11-13T01:22:57 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/cca">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">18</th>
+            <td>
+                <strong>New Zealand HPI IG</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/hpi">HL7NZ / <strong>hpi</strong></a> updated <time datetime="2020-11-12T22:40:55 +0000">2020-11-12T22:40:55 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/hpi">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">19</th>
+            <td>
+                <strong>New Zealand NHI IG</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/nhi">HL7NZ / <strong>nhi</strong></a> updated <time datetime="2020-11-12T22:27:53 +0000">2020-11-12T22:27:53 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/nhi">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">20</th>
+            <td>
+                <strong>CARIN Consumer Directed Payer Data Exchange (CARIN IG for Blue Button®)</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/carin-bb">HL7 / <strong>carin-bb</strong></a> updated <time datetime="2020-11-12T01:38:32 +0000">2020-11-12T01:38:32 +0000</time> [<a href="https://build.fhir.org/ig/HL7/carin-bb">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">21</th>
+            <td>
+                <strong>SaraAlert</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/SaraAlert/saraalert-fhir-ig">SaraAlert / <strong>saraalert-fhir-ig</strong></a> updated <time datetime="2020-11-10T15:23:13 +0000">2020-11-10T15:23:13 +0000</time>
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">22</th>
+            <td>
+                <strong>SMART Web Messaging Implementation Guide: STU1</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/smart-web-messaging">HL7 / <strong>smart-web-messaging</strong></a> updated <time datetime="2020-11-10T03:46:20 +0000">2020-11-10T03:46:20 +0000</time> [<a href="https://build.fhir.org/ig/HL7/smart-web-messaging">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">23</th>
+            <td>
+                <strong>HL7 FHIR Implementation Guide: Military Service History</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-military-service">HL7 / <strong>fhir-military-service</strong></a> updated <time datetime="2020-11-09T13:08:30 +0000">2020-11-09T13:08:30 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-military-service">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">24</th>
+            <td>
+                <strong>Carequality Subscription Implementation Guide for Push Notifications</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/DavidPyke/CEQSubscription">DavidPyke / <strong>CEQSubscription</strong></a> updated <time datetime="2020-11-06T19:56:53 +0000">2020-11-06T19:56:53 +0000</time> [<a href="https://build.fhir.org/ig/DavidPyke/CEQSubscription">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">25</th>
+            <td>
+                <strong>DaVinci PDEX Plan Net</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/davinci-pdex-plan-net">HL7 / <strong>davinci-pdex-plan-net</strong></a> updated <time datetime="2020-11-04T21:23:00 +0000">2020-11-04T21:23:00 +0000</time> [<a href="https://build.fhir.org/ig/HL7/davinci-pdex-plan-net">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">26</th>
+            <td>
+                <strong>Formulary</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/davinci-pdex-formulary">HL7 / <strong>davinci-pdex-formulary</strong></a> updated <time datetime="2020-11-02T14:57:52 +0000">2020-11-02T14:57:52 +0000</time> [<a href="https://build.fhir.org/ig/HL7/davinci-pdex-formulary">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">27</th>
+            <td>
+                <strong>Implementation Guide for fælleskommunal informationsmodel</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/hl7dk/KL-dk">hl7dk / <strong>KL-dk</strong></a> updated <time datetime="2020-11-02T13:08:54 +0000">2020-11-02T13:08:54 +0000</time> [<a href="https://build.fhir.org/ig/hl7dk/KL-dk">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">28</th>
+            <td>
+                <strong>Implementation Guide for værktøjsprojektet</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/hl7dk/KL-dk-tools">hl7dk / <strong>KL-dk-tools</strong></a> updated <time datetime="2020-10-30T13:52:26 +0000">2020-10-30T13:52:26 +0000</time> [<a href="https://build.fhir.org/ig/hl7dk/KL-dk-tools">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">29</th>
+            <td>
+                <strong>KLGateway</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/tmh-mjolner/KLGateway">tmh-mjolner / <strong>KLGateway</strong></a> updated <time datetime="2020-10-27T15:01:23 +0000">2020-10-27T15:01:23 +0000</time> [<a href="https://build.fhir.org/ig/tmh-mjolner/KLGateway">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">30</th>
+            <td>
+                <strong>DK MedCom Core (R4)</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/hl7dk/dk-medcom">hl7dk / <strong>dk-medcom</strong></a> updated <time datetime="2020-10-26T15:40:22 +0000">2020-10-26T15:40:22 +0000</time> [<a href="https://build.fhir.org/ig/hl7dk/dk-medcom">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">31</th>
+            <td>
+                <strong>Situational Awareness for Novel Epidemic Response</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-saner">HL7 / <strong>fhir-saner</strong></a> updated <time datetime="2020-10-19T14:33:04 +0000">2020-10-19T14:33:04 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-saner">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">32</th>
+            <td>
+                <strong>Situational Awareness for Novel Epidemic Response</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/AudaciousInquiry/fhir-saner">AudaciousInquiry / <strong>fhir-saner</strong></a> updated <time datetime="2020-10-19T14:31:47 +0000">2020-10-19T14:31:47 +0000</time> [<a href="https://build.fhir.org/ig/AudaciousInquiry/fhir-saner">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">33</th>
+            <td>
+                <strong>HL7 FHIR Pain Assessment Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/cimi-pain-assessment">HL7 / <strong>cimi-pain-assessment</strong></a> updated <time datetime="2020-10-13T12:44:17 +0000">2020-10-13T12:44:17 +0000</time> [<a href="https://build.fhir.org/ig/HL7/cimi-pain-assessment">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">34</th>
+            <td>
+                <strong>SNOMED CT Implementation Guide for FHIR</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/IHTSDO/snomed-ig">IHTSDO / <strong>snomed-ig</strong></a> updated <time datetime="2020-10-08T10:13:07 +0000">2020-10-08T10:13:07 +0000</time> [<a href="https://build.fhir.org/ig/IHTSDO/snomed-ig">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">35</th>
+            <td>
+                <strong>DRAFT - CodeX Implementation Guide: Integrated Trial Matching for Cancer Patients and Providers</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/standardhealth/fsh-pct">standardhealth / <strong>fsh-pct</strong></a> updated <time datetime="2020-10-01T20:39:07 +0000">2020-10-01T20:39:07 +0000</time> [<a href="https://build.fhir.org/ig/standardhealth/fsh-pct">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">36</th>
+            <td>
+                <strong>Immunization Decision Support Forecast (ImmDS) Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/ImmunizationFHIRDS">HL7 / <strong>ImmunizationFHIRDS</strong></a> updated <time datetime="2020-09-29T04:26:42 +0000">2020-09-29T04:26:42 +0000</time> [<a href="https://build.fhir.org/ig/HL7/ImmunizationFHIRDS">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">37</th>
+            <td>
+                <strong>ihe.mhd.fhir</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/JohnMoehrke/MHD-fsh">JohnMoehrke / <strong>MHD-fsh</strong></a> updated <time datetime="2020-09-28T19:16:07 +0000">2020-09-28T19:16:07 +0000</time> [<a href="https://build.fhir.org/ig/JohnMoehrke/MHD-fsh">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">38</th>
+            <td>
+                <strong>HL7 Pharmacy: Medication List Guidance</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-med-list-guidance">HL7 / <strong>fhir-med-list-guidance</strong></a> updated <time datetime="2020-09-22T22:46:29 +0000">2020-09-22T22:46:29 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-med-list-guidance">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">39</th>
+            <td>
+                <strong>v2-to-fhir</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/v2-to-fhir">HL7 / <strong>v2-to-fhir</strong></a> updated <time datetime="2020-08-29T20:13:14 +0000">2020-08-29T20:13:14 +0000</time> [<a href="https://build.fhir.org/ig/HL7/v2-to-fhir">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">40</th>
+            <td>
+                <strong>Birth Defect Reporting Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7/fhir-birthdefectsreporting-ig">HL7 / <strong>fhir-birthdefectsreporting-ig</strong></a> updated <time datetime="2020-08-26T19:21:43 +0000">2020-08-26T19:21:43 +0000</time> [<a href="https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">41</th>
+            <td>
+                <strong>Northern Region Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/northernRegion">HL7NZ / <strong>northernRegion</strong></a> updated <time datetime="2020-07-28T04:04:17 +0000">2020-07-28T04:04:17 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/northernRegion">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">42</th>
+            <td>
+                <strong>Northern Region Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/northernregion">HL7NZ / <strong>northernregion</strong></a> updated <time datetime="2020-07-28T04:04:17 +0000">2020-07-28T04:04:17 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/northernregion">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        <tr>
+            <th scope="row">43</th>
+            <td>
+                <strong>HL7® FHIR® New Zealand Base Implementation Guide</strong>
+                <div class="ig-info">
+                    <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/HL7NZ/nzbase">HL7NZ / <strong>nzbase</strong></a> updated <time datetime="2020-07-07T22:38:12 +0000">2020-07-07T22:38:12 +0000</time> [<a href="https://build.fhir.org/ig/HL7NZ/nzbase">CI build</a>]
+                </div>
+            </td>
+            <td>
+                
+                    <span class="badge badge-warning">0.x</span>
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
+                
+                
+            </td>
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            <!--
+            <td>
+                
+                
+                <span data-toggle="popover" data-trigger="hover click" title="Note" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-danger">No</span>
+                
+                
+            </td>
+            -->
+        </tr>
+        
+        </tbody>
+    </table>
+    <div class="callout callout-warning">
+        <h5>Is your IG missing?</h5>
+        <p>
+        <ul>
+            <li>The easiest way to add it is to <a href="https://github.com/FHIR/auto-ig-builder">register it for CI builds on build.fhir.org</a>.</li>
+            <li>You can also submit a pull request to add your IG's GitHub repository to the list of manually crawled sources. You can also have every repository in your GitHub org/username manually crawled if you have multiple IGs using FSH. Currently the manually crawled sources are defined <a href="https://github.com/FSHSchool/fsh-finder/blob/main/lib/repo_sources.rb#L57-L78">here</a>.</li>
+            <li>If your IG is registered for CI builds or is already covered by the manual crawl sources, and it still does not appear, please <a href="https://github.com/FSHSchool/fsh-finder/issues">log an issue</a>.</li>
+        </ul>
+        </p>
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <a class="text-muted" href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md#license">Copyright 2020 The MITRE Corporation</a>. <span class="text-muted">Approved for Public Release; Distribution Unlimited. Public Release Case Number 16-1988.</span>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA==" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+        jQuery("time").timeago();
+    })
+</script>
+</body>
+</html>
