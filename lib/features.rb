@@ -58,13 +58,3 @@ class FeaturesOperationDefinition < FeatureBase
     Util.github_search_fsh_in_repo(repo, 'InstanceOf: OperationDefinition')
   end
 end
-
-# Defines StructureDefinitions in FSH?
-class FeaturesStructureDefinition < FeatureBase
-  APPLIES_TO_BRANCHES = :default
-  TITLE = 'StructureDefinition instance defined in FSH'.freeze
-
-  def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'InstanceOf: StructureDefinition')
-  end
-end

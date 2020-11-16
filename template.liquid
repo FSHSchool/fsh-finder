@@ -76,12 +76,12 @@
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
-            <th scope="col">IG</th>
-            <th scope="col">FSH?</th>
-            <th scope="col">FSH: Profile?</th>
-            <th scope="col">FSH: Instance?</th>
-            <th scope="col">FSH: OD?</th>
-            <th scope="col">FSH: SD?</th>
+            <th scope="col">Implementation Guide</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="FHIR Shorthand version" data-content="Identifies repositories where any branch includes FHIR Shorthand (FSH). Differentiates between repositories that support SUSHI >= 1.0 (released November 13, 2020) and prior versions.">FSH Version</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a Profile in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a Profile.">FSH: Profiles</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Instance in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Instance of a resource (e.g., for examples of Profiles).">FSH: Instances</th>
+            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a OperationDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an OperationDefinition resource.">FSH: Operations</th>
+            <!--<th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a StructureDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a StructureDefinition resource.">FSH: SD?</th>-->
         </tr>
         </thead>
         <tbody>
@@ -98,7 +98,7 @@
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch %}
                     <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="{{ repo.feature_assessments.FeatureSushiOne.branches_with_feature | join: ", " }}">1.0</span>
                 {% elsif repo.feature_assessments.FeatureSushiOld.any_branch %}
-                    <span class="badge badge-warning">Old</span>
+                    <span class="badge badge-warning">0.x</span>
                 {% else %}
                 <span class="badge badge-danger">No</span>
                 {% endif %}
@@ -130,6 +130,7 @@
                 {% endif %}
                 {% endif %}
             </td>
+            <!--
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
                 {% if repo.feature_assessments.FeaturesStructureDefinition.any_branch %}
@@ -139,6 +140,7 @@
                 {% endif %}
                 {% endif %}
             </td>
+            -->
         </tr>
         {% endfor %}
         </tbody>
