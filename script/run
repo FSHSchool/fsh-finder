@@ -33,7 +33,10 @@ if !File.file?(cache_path)
     FeaturesInstance,
     FeaturesProfile,
     FeaturesOperationDefinition,
-    FeaturesStructureDefinition
+    FeaturesSearchParameter,
+    FeaturesExtension,
+    FeaturesValueSet,
+    FeaturesCodeSystem
   )
 
   repos_json = repos_collection.to_json

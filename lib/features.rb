@@ -58,3 +58,43 @@ class FeaturesOperationDefinition < FeatureBase
     Util.github_search_fsh_in_repo(repo, 'InstanceOf: OperationDefinition')
   end
 end
+
+# Defines SearchParameter in FSH?
+class FeaturesSearchParameter < FeatureBase
+  APPLIES_TO_BRANCHES = :default
+  TITLE = 'SearchParameter instance defined in FSH'.freeze
+
+  def self.assess(repo)
+    Util.github_search_fsh_in_repo(repo, 'InstanceOf: SearchParameter')
+  end
+end
+
+# Defines Extension in FSH?
+class FeaturesExtension < FeatureBase
+  APPLIES_TO_BRANCHES = :default
+  TITLE = 'Extension defined in FSH'.freeze
+
+  def self.assess(repo)
+    Util.github_search_fsh_in_repo(repo, 'Extension: ')
+  end
+end
+
+# Defines ValueSet in FSH?
+class FeaturesValueSet < FeatureBase
+  APPLIES_TO_BRANCHES = :default
+  TITLE = 'ValueSet defined in FSH'.freeze
+
+  def self.assess(repo)
+    Util.github_search_fsh_in_repo(repo, 'ValueSet: ')
+  end
+end
+
+# Defines CodeSystem in FSH?
+class FeaturesCodeSystem < FeatureBase
+  APPLIES_TO_BRANCHES = :default
+  TITLE = 'ValueSet defined in FSH'.freeze
+
+  def self.assess(repo)
+    Util.github_search_fsh_in_repo(repo, 'CodeSystem: ')
+  end
+end
