@@ -1,11 +1,13 @@
 #!/usr/bin/env zsh
 
-# Create an orphaned branch if running for the first time
-# git checkout --orphan public && git commit --allow-empty -m "Initial commit"
+# Create an orphaned branch if running for the first time:
+#   1. `git checkout --orphan public`
+#   2. Unstage any files that were staged
+#   3. `git commit --allow-empty -m "Initial commit"`
 
 # Use `git-worktree` to check out the `public` branch to a folder off the main repo
 git worktree add public/ public
 cp generated/* public/
 mv public/cache.json public/fshy_repos.json
-cd public && git add -A && git commit --amend --no-edit && git push -u origin public -f && cd ..
+cd public && git add -A && git commit -m "Update site" && git push -u origin public && cd ..
 git worktree remove public
