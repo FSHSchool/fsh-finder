@@ -3,6 +3,7 @@ https://github.com/standardhealth/fsh-icare
 https://github.com/standardhealth/fsh-pct
 https://github.com/aehrc/primary-care-data-technical
 https://github.com/JohnMoehrke/MHD-fsh
+https://github.com/danka74/ko-ig
 https://github.com/danka74/basprofiler-r4
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/riziv-inami
@@ -11,8 +12,11 @@ https://github.com/hl7dk/KL-dk
 https://github.com/hl7dk/KL-dk-tools
 https://github.com/hl7dk/dk-medcom
 https://github.com/costateixeira/devdays-covid19-vaccine
+https://github.com/IHE/ITI.MHD
+https://github.com/IHE/ITI_MHD_FHIR
 https://github.com/openhie/covid-ig
 https://github.com/DavidPyke/CEQSubscription
+https://github.com/HL7Sweden/basprofiler-r4
 https://github.com/HL7NZ/northernregion
 https://github.com/HL7NZ/hpi
 https://github.com/HL7NZ/nzbase
@@ -35,6 +39,7 @@ https://github.com/HL7/cimi-pain-assessment
 https://github.com/HL7/ImmunizationFHIRDS
 https://github.com/HL7/carin-bb
 https://github.com/HL7/fhir-birthdefectsreporting-ig
+https://github.com/HL7/fhir-icsr-ae-reporting
 https://github.com/HL7/smart-web-messaging
 https://github.com/HL7/US-Core-R4
 https://github.com/HL7/davinci-pdex-plan-net
