@@ -110,8 +110,8 @@ class Util
       rescue Net::OpenTimeout
         logger.info "HTTP timeout, retrying."
       end
-      logger.info "Retrying #{url} in 10 seconds."
-      sleep 10
+      logger.info "Retrying #{url} in 30 seconds."
+      sleep 30
     end
     response
   end
@@ -133,8 +133,8 @@ class Util
       rescue Net::OpenTimeout
         logger.info "HTTP timeout, retrying."
       end
-      logger.info "Retrying #{url} in 10 seconds."
-      sleep 10
+      logger.info "Retrying #{url} in 30 seconds."
+      sleep 30
     end
     response
   end
