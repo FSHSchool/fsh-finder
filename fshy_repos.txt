@@ -13,6 +13,7 @@ https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7dk/KL-dk
 https://github.com/hl7dk/KL-dk-tools
 https://github.com/hl7dk/dk-medcom
+https://github.com/hl7dk/kl-gateway
 https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/ITI.MHD
 https://github.com/IHE/ITI_MHD_FHIR
