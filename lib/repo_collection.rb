@@ -6,7 +6,7 @@ class RepoCollection
   def initialize(*repos)
     deduplicated_repos = {}
 
-    repos.flatten.each do |r|
+    repos.flatten.compact.each do |r|
       deduplicated_repos[r.identifier] ||= r
     end
 
