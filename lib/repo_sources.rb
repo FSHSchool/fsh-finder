@@ -33,6 +33,14 @@ class RepoSourceFhirCiBuild < RepoSource
     # De-duplicate repos
     unique_repos = {}
     repos.each do |r|
+      # Ignore if a repo with the same ci_build_url value is already discovered -- there are entries for multiple branches
+      # for the same repo in some cases.
+      #
+      # Note that if a repo has been renamed on GitHub, it's possible to have two Repo objects that point to the same
+      # GitHub repo but have different `ci_build_url` values. If this happens, there will be some duplicate requests
+      # to the GitHub API, and these duplicates won't get caught until the dedupe step in RepoCollection.
+      next if unique_repos.values.map{ |existing_unqiue_repo| existing_unqiue_repo.ci_build_url }.include? r.ci_build_url
+
       # Remove repos that aren't public on GitHub or don't exist
       next unless Util.github_repo_exists(r)
 
