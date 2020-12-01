@@ -27,7 +27,7 @@ class Repo
   # Gets unique identifier for a given repository
   # @return [String]
   def identifier
-    %(https://#{@host.to_s}/#{@owner.downcase}/#{name.downcase})
+    @identifier ||= %(https://#{@host.to_s}/#{github_repo_info['full_name']})
   end
 
   # Gets branches for a repo

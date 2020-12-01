@@ -81,7 +81,11 @@ class Util
   end
 
   def self.github_check_auth
-    github_get('https://api.github.com/user')
+    # Make sure authentication ENV vars are actually set
+    raise ".env not set" if !ENV['GITHUB_USERNAME'] || !ENV['GITHUB_TOKEN']
+
+    # `github_get` will have a 200 code if authenticated, 401 if auth is bad
+    github_get('https://api.github.com/repos/fshschool/fsh-finder')
   end
 
   private
@@ -104,6 +108,7 @@ class Util
             verify: false # Ignore SSL errors - sometimes a problem inside the MITRE firewall
         )
         raise "404 for #{url}" if response.code == 404
+        raise "401 (requires authentication) for #{url}" if response.code == 401
         break if response.code == 200 || response.code == 422
 
         logger.info "GitHub error: #{response.code} #{response.body}" if response.code != 200
