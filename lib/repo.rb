@@ -122,8 +122,9 @@ class Repo
       feature_assessments: @feature_assessments.inject({}) { |out, (k, v)| out[k] = v.transform_keys(&:to_s); out},
       ig_title: ig_title,
       repo_host: @host,
-      repo_name: @name,
-      repo_owner: @owner,
+      # Use the GitHub API info to get proper capitalization for the repo name and owner
+      repo_name: github_repo_info['name'],
+      repo_owner: github_repo_info['owner']['login'],
       updated_at: updated_at.strftime('%Y-%m-%dT%H:%M:%S %z'),
     }.transform_keys(&:to_s)
   end
