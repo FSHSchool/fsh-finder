@@ -33,11 +33,11 @@ class RepoSourceFhirCiBuild < RepoSource
     # De-duplicate repos
     unique_repos = {}
     repos.each do |r|
+      # Remove repos that aren't public on GitHub or don't exist
+      next unless Util.github_repo_exists(r)
+
       unique_repos[r.identifier] ||= r
     end
-
-    # Remove repos that aren't public on GitHub or don't exist
-    unique_repos.values.select { |r| Util.github_repo_exists(r) }
   end
 
   private
