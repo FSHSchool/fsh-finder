@@ -37,4 +37,13 @@ RSpec.describe Repo do
       expect(as_json['feature_assessments'][FeatureSushiOne.name]).to include 'any_branch'
     end
   end
+
+  context 'when repo names differ only by capitalization' do
+    it 'should give the same identifier for both repos' do
+      repo_1 = Repo.new('Owner', 'Name')
+      repo_2 = Repo.new('owner', 'name')
+
+      expect(repo_1.identifier).to eq repo_2.identifier
+    end
+  end
 end
