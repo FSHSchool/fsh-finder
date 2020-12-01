@@ -1,7 +1,85 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/HL7/US-Core",
+      "identifier": "https://github.com/hl7/genomics-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "genomics-reporting-fsh-mlt",
+            "genomics-reporting-fsh-pw",
+            "genomics-reporting-fsh-rpm",
+            "jrj-jira-pending",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesOperationDefinition": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "OperationDefinition instance defined in FSH"
+        },
+        "FeaturesSearchParameter": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "SearchParameter instance defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Clinical Genomics Reporting Release 1 - US Realm | STU1",
+      "repo_host": "github.com",
+      "repo_name": "genomics-reporting",
+      "repo_owner": "HL7",
+      "updated_at": "2020-12-01T13:29:58 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7/us-core",
       "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -75,7 +153,7 @@
       "updated_at": "2020-12-01T06:44:29 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/US-Core-R4",
+      "identifier": "https://github.com/hl7/us-core-r4",
       "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core-R4",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -144,12 +222,12 @@
       },
       "ig_title": "US Core Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "US-Core-R4",
+      "repo_name": "US-Core",
       "repo_owner": "HL7",
       "updated_at": "2020-12-01T06:44:29 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-subscription-backport-ig",
+      "identifier": "https://github.com/hl7/fhir-subscription-backport-ig",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-subscription-backport-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -223,7 +301,7 @@
       "updated_at": "2020-11-30T22:29:54 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
+      "identifier": "https://github.com/hl7/fhir-mcode-ig",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -455,7 +533,7 @@
       "updated_at": "2020-11-30T00:10:23 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/livd",
+      "identifier": "https://github.com/hl7/livd",
       "ci_build_url": "https://build.fhir.org/ig/HL7/livd",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -530,86 +608,7 @@
       "updated_at": "2020-11-27T17:23:08 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/genomics-reporting",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "genomics-reporting-fsh-mlt",
-            "genomics-reporting-fsh-pw",
-            "genomics-reporting-fsh-rpm",
-            "jrj-jira-pending",
-            "master",
-            "mlt-profile-examples"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Clinical Genomics Reporting Release 1 - US Realm | STU1",
-      "repo_host": "github.com",
-      "repo_name": "genomics-reporting",
-      "repo_owner": "HL7",
-      "updated_at": "2020-11-27T14:11:31 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/KL-dk",
+      "identifier": "https://github.com/hl7dk/kl-dk",
       "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -683,7 +682,7 @@
       "updated_at": "2020-11-26T15:16:09 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/hpi",
+      "identifier": "https://github.com/hl7nz/hpi",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -757,7 +756,7 @@
       "updated_at": "2020-11-25T23:07:17 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/nhi",
+      "identifier": "https://github.com/hl7nz/nhi",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nhi",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -831,7 +830,7 @@
       "updated_at": "2020-11-25T23:00:11 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/cca",
+      "identifier": "https://github.com/hl7nz/cca",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/cca",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -974,7 +973,7 @@
       },
       "ig_title": "be-core",
       "repo_host": "github.com",
-      "repo_name": "be-core",
+      "repo_name": "hl7-be-fhir",
       "repo_owner": "hl7-be",
       "updated_at": "2020-11-25T19:42:13 +0000"
     },
@@ -1201,7 +1200,7 @@
       "updated_at": "2020-11-23T22:46:06 +0000"
     },
     {
-      "identifier": "https://github.com/hl7dk/KL-dk-tools",
+      "identifier": "https://github.com/hl7dk/kl-dk-tools",
       "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk-tools",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1275,7 +1274,7 @@
       "updated_at": "2020-11-23T13:13:20 +0000"
     },
     {
-      "identifier": "https://github.com/IHE/ITI.MHD",
+      "identifier": "https://github.com/ihe/iti.mhd",
       "ci_build_url": "https://build.fhir.org/ig/IHE/ITI.MHD",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1349,7 +1348,7 @@
       "updated_at": "2020-11-20T16:08:12 +0000"
     },
     {
-      "identifier": "https://github.com/IHE/ITI_MHD_FHIR",
+      "identifier": "https://github.com/ihe/iti_mhd_fhir",
       "ci_build_url": "https://build.fhir.org/ig/IHE/ITI_MHD_FHIR",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1418,12 +1417,12 @@
       },
       "ig_title": "ihe.mhd.fhir",
       "repo_host": "github.com",
-      "repo_name": "ITI_MHD_FHIR",
+      "repo_name": "ITI.MHD",
       "repo_owner": "IHE",
       "updated_at": "2020-11-20T16:08:12 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
+      "identifier": "https://github.com/hl7/fhir-icsr-ae-reporting",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1574,7 +1573,7 @@
       "updated_at": "2020-11-18T14:39:24 +0000"
     },
     {
-      "identifier": "https://github.com/IHTSDO/snomed-ig",
+      "identifier": "https://github.com/ihtsdo/snomed-ig",
       "ci_build_url": "https://build.fhir.org/ig/IHTSDO/snomed-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1724,7 +1723,7 @@
       "updated_at": "2020-10-01T19:34:15 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/davinci-epdx",
+      "identifier": "https://github.com/hl7/davinci-epdx",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-epdx",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1805,7 +1804,7 @@
       "updated_at": "2020-12-01T08:41:27 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-military-service",
+      "identifier": "https://github.com/hl7/fhir-military-service",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -1879,7 +1878,7 @@
       "updated_at": "2020-12-01T03:15:18 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/v2-to-fhir",
+      "identifier": "https://github.com/hl7/v2-to-fhir",
       "ci_build_url": "https://build.fhir.org/ig/HL7/v2-to-fhir",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2033,7 +2032,7 @@
       "updated_at": "2020-11-30T09:38:42 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-saner",
+      "identifier": "https://github.com/hl7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2184,7 +2183,7 @@
       "updated_at": "2020-11-25T20:20:39 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/davinci-pas",
+      "identifier": "https://github.com/hl7/davinci-pas",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pas",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2258,7 +2257,7 @@
       "updated_at": "2020-11-24T17:01:04 +0000"
     },
     {
-      "identifier": "https://github.com/HL7Sweden/basprofiler-r4",
+      "identifier": "https://github.com/hl7sweden/basprofiler-r4",
       "ci_build_url": "https://build.fhir.org/ig/HL7Sweden/basprofiler-r4",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2332,7 +2331,7 @@
       "updated_at": "2020-11-24T16:11:51 +0000"
     },
     {
-      "identifier": "https://github.com/AudaciousInquiry/fhir-saner",
+      "identifier": "https://github.com/audaciousinquiry/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/AudaciousInquiry/fhir-saner",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2412,7 +2411,7 @@
       "updated_at": "2020-11-23T17:34:11 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/carin-bb",
+      "identifier": "https://github.com/hl7/carin-bb",
       "ci_build_url": "https://build.fhir.org/ig/HL7/carin-bb",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2498,7 +2497,7 @@
       "updated_at": "2020-11-23T16:47:23 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/davinci-pdex-formulary",
+      "identifier": "https://github.com/hl7/davinci-pdex-formulary",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-formulary",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2578,7 +2577,7 @@
       "updated_at": "2020-11-20T19:04:43 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/davinci-pdex-plan-net",
+      "identifier": "https://github.com/hl7/davinci-pdex-plan-net",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2732,7 +2731,7 @@
       "updated_at": "2020-11-19T16:40:56 +0000"
     },
     {
-      "identifier": "https://github.com/DavidPyke/CEQSubscription",
+      "identifier": "https://github.com/davidpyke/ceqsubscription",
       "ci_build_url": "https://build.fhir.org/ig/DavidPyke/CEQSubscription",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2806,7 +2805,7 @@
       "updated_at": "2020-11-19T15:06:02 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/smart-app-launch",
+      "identifier": "https://github.com/hl7/smart-app-launch",
       "ci_build_url": "https://build.fhir.org/ig/HL7/smart-app-launch",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2891,7 +2890,7 @@
       "updated_at": "2020-11-19T10:59:12 +0000"
     },
     {
-      "identifier": "https://github.com/SaraAlert/saraalert-fhir-ig",
+      "identifier": "https://github.com/saraalert/saraalert-fhir-ig",
       "ci_build_url": null,
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -2967,7 +2966,7 @@
       "updated_at": "2020-11-10T15:23:13 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/smart-web-messaging",
+      "identifier": "https://github.com/hl7/smart-web-messaging",
       "ci_build_url": "https://build.fhir.org/ig/HL7/smart-web-messaging",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3044,7 +3043,7 @@
       "updated_at": "2020-11-10T03:46:20 +0000"
     },
     {
-      "identifier": "https://github.com/tmh-mjolner/KLGateway",
+      "identifier": "https://github.com/tmh-mjolner/klgateway",
       "ci_build_url": "https://build.fhir.org/ig/tmh-mjolner/KLGateway",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3201,7 +3200,7 @@
       "updated_at": "2020-10-26T15:40:22 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/cimi-pain-assessment",
+      "identifier": "https://github.com/hl7/cimi-pain-assessment",
       "ci_build_url": "https://build.fhir.org/ig/HL7/cimi-pain-assessment",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3352,7 +3351,7 @@
       "updated_at": "2020-10-01T20:39:07 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/ImmunizationFHIRDS",
+      "identifier": "https://github.com/hl7/immunizationfhirds",
       "ci_build_url": "https://build.fhir.org/ig/HL7/ImmunizationFHIRDS",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3385,9 +3384,9 @@
           "title": "Profile defined in FSH"
         },
         "FeaturesOperationDefinition": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "OperationDefinition instance defined in FSH"
         },
@@ -3427,7 +3426,7 @@
       "updated_at": "2020-09-29T04:26:42 +0000"
     },
     {
-      "identifier": "https://github.com/JohnMoehrke/MHD-fsh",
+      "identifier": "https://github.com/johnmoehrke/mhd-fsh",
       "ci_build_url": "https://build.fhir.org/ig/JohnMoehrke/MHD-fsh",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3501,7 +3500,7 @@
       "updated_at": "2020-09-28T19:16:07 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-med-list-guidance",
+      "identifier": "https://github.com/hl7/fhir-med-list-guidance",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-med-list-guidance",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3575,7 +3574,7 @@
       "updated_at": "2020-09-22T22:46:29 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-birthdefectsreporting-ig",
+      "identifier": "https://github.com/hl7/fhir-birthdefectsreporting-ig",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-birthdefectsreporting-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3649,82 +3648,8 @@
       "updated_at": "2020-08-26T19:21:43 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/northernregion",
+      "identifier": "https://github.com/hl7nz/northernregion",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/northernregion",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Northern Region Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "northernregion",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2020-07-28T04:04:17 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7NZ/northernRegion",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/northernRegion",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": false,
@@ -3797,7 +3722,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/nzbase",
+      "identifier": "https://github.com/hl7nz/nzbase",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
       "feature_assessments": {
         "FeatureSushiOne": {
@@ -3871,58 +3796,57 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-01 04:25:06 -0500",
+  "updated": "2020-12-01 09:24:57 -0500",
   "fshy_repos": [
-    "https://github.com/tmh-mjolner/KLGateway",
+    "https://github.com/tmh-mjolner/klgateway",
     "https://github.com/standardhealth/fsh-icare",
     "https://github.com/standardhealth/fsh-pct",
     "https://github.com/aehrc/primary-care-data-technical",
-    "https://github.com/JohnMoehrke/MHD-fsh",
+    "https://github.com/johnmoehrke/mhd-fsh",
     "https://github.com/danka74/ko-ig",
     "https://github.com/danka74/basprofiler-r4",
-    "https://github.com/IHTSDO/snomed-ig",
+    "https://github.com/ihtsdo/snomed-ig",
     "https://github.com/hl7-be/be-core",
     "https://github.com/hl7-be/riziv-inami",
     "https://github.com/hl7-be/hl7-be-fhir-medication",
     "https://github.com/hl7-be/hl7-be-fhir",
-    "https://github.com/hl7dk/KL-dk",
-    "https://github.com/hl7dk/KL-dk-tools",
+    "https://github.com/hl7dk/kl-dk",
+    "https://github.com/hl7dk/kl-dk-tools",
     "https://github.com/hl7dk/dk-medcom",
     "https://github.com/hl7dk/kl-gateway",
     "https://github.com/costateixeira/devdays-covid19-vaccine",
-    "https://github.com/IHE/ITI.MHD",
-    "https://github.com/IHE/ITI_MHD_FHIR",
+    "https://github.com/ihe/iti.mhd",
+    "https://github.com/ihe/iti_mhd_fhir",
     "https://github.com/openhie/covid-ig",
-    "https://github.com/DavidPyke/CEQSubscription",
-    "https://github.com/HL7Sweden/basprofiler-r4",
-    "https://github.com/HL7NZ/northernregion",
-    "https://github.com/HL7NZ/hpi",
-    "https://github.com/HL7NZ/nzbase",
-    "https://github.com/HL7NZ/northernRegion",
-    "https://github.com/HL7NZ/cca",
-    "https://github.com/HL7NZ/nhi",
-    "https://github.com/AudaciousInquiry/fhir-saner",
-    "https://github.com/HL7/fhir-med-list-guidance",
-    "https://github.com/HL7/livd",
-    "https://github.com/HL7/fhir-military-service",
-    "https://github.com/HL7/smart-app-launch",
-    "https://github.com/HL7/fhir-saner",
-    "https://github.com/HL7/davinci-epdx",
-    "https://github.com/HL7/fhir-mCODE-ig",
-    "https://github.com/HL7/v2-to-fhir",
-    "https://github.com/HL7/davinci-pdex-formulary",
-    "https://github.com/HL7/genomics-reporting",
-    "https://github.com/HL7/US-Core",
-    "https://github.com/HL7/cimi-pain-assessment",
-    "https://github.com/HL7/ImmunizationFHIRDS",
-    "https://github.com/HL7/carin-bb",
-    "https://github.com/HL7/fhir-birthdefectsreporting-ig",
-    "https://github.com/HL7/fhir-icsr-ae-reporting",
-    "https://github.com/HL7/smart-web-messaging",
-    "https://github.com/HL7/US-Core-R4",
-    "https://github.com/HL7/davinci-pdex-plan-net",
-    "https://github.com/HL7/davinci-pas",
-    "https://github.com/HL7/fhir-subscription-backport-ig",
-    "https://github.com/SaraAlert/saraalert-fhir-ig"
+    "https://github.com/davidpyke/ceqsubscription",
+    "https://github.com/hl7sweden/basprofiler-r4",
+    "https://github.com/hl7nz/northernregion",
+    "https://github.com/hl7nz/hpi",
+    "https://github.com/hl7nz/nzbase",
+    "https://github.com/hl7nz/cca",
+    "https://github.com/hl7nz/nhi",
+    "https://github.com/audaciousinquiry/fhir-saner",
+    "https://github.com/hl7/fhir-med-list-guidance",
+    "https://github.com/hl7/livd",
+    "https://github.com/hl7/fhir-military-service",
+    "https://github.com/hl7/smart-app-launch",
+    "https://github.com/hl7/fhir-saner",
+    "https://github.com/hl7/davinci-epdx",
+    "https://github.com/hl7/fhir-mcode-ig",
+    "https://github.com/hl7/v2-to-fhir",
+    "https://github.com/hl7/davinci-pdex-formulary",
+    "https://github.com/hl7/genomics-reporting",
+    "https://github.com/hl7/us-core",
+    "https://github.com/hl7/cimi-pain-assessment",
+    "https://github.com/hl7/immunizationfhirds",
+    "https://github.com/hl7/carin-bb",
+    "https://github.com/hl7/fhir-birthdefectsreporting-ig",
+    "https://github.com/hl7/fhir-icsr-ae-reporting",
+    "https://github.com/hl7/smart-web-messaging",
+    "https://github.com/hl7/us-core-r4",
+    "https://github.com/hl7/davinci-pdex-plan-net",
+    "https://github.com/hl7/davinci-pas",
+    "https://github.com/hl7/fhir-subscription-backport-ig",
+    "https://github.com/saraalert/saraalert-fhir-ig"
   ]
 }
