@@ -46,6 +46,8 @@ class RepoSourceFhirCiBuild < RepoSource
 
       unique_repos[r.identifier] ||= r
     end
+
+    unique_repos.values
   end
 
   private
