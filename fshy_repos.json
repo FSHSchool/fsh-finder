@@ -1,13 +1,13 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/HL7/fhir-patient-correction",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-patient-correction",
+      "identifier": "https://github.com/HL7/livd",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/livd",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "main",
+            "convert-to-fsh",
             "master"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -20,16 +20,16 @@
           "title": "Uses SUSHI < 1.0"
         },
         "FeaturesInstance": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "Profile defined in FSH"
         },
@@ -48,32 +48,32 @@
           "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         },
         "FeaturesCodeSystem": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "Patient Corrections Implementation Guide",
+      "ig_title": "LoincIvdTestCodeMapping",
       "repo_host": "github.com",
-      "repo_name": "fhir-patient-correction",
+      "repo_name": "livd",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-12T18:44:38 +0000"
+      "updated_at": "2020-12-14T04:46:42 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-subscription-backport-ig",
@@ -147,16 +147,16 @@
       "repo_host": "github.com",
       "repo_name": "fhir-subscription-backport-ig",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-12T17:05:24 +0000"
+      "updated_at": "2020-12-13T23:25:32 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/livd",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/livd",
+      "identifier": "https://github.com/HL7/fhir-patient-correction",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-patient-correction",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "convert-to-fsh",
+            "main",
             "master"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -169,16 +169,16 @@
           "title": "Uses SUSHI < 1.0"
         },
         "FeaturesInstance": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "Profile defined in FSH"
         },
@@ -197,32 +197,32 @@
           "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "ValueSet defined in FSH"
         },
         "FeaturesCodeSystem": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "LoincIvdTestCodeMapping",
+      "ig_title": "Patient Corrections Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "livd",
+      "repo_name": "fhir-patient-correction",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-11T20:27:40 +0000"
+      "updated_at": "2020-12-13T22:41:46 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -237,7 +237,7 @@
             "genomics-error1-mfm",
             "genomics-error1-somatic-mfm",
             "master",
-            "misc-cleanups",
+            "new-approach-to-extensibile-value-sets",
             "terminology-updates"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -303,7 +303,7 @@
       "repo_host": "github.com",
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-11T15:19:36 +0000"
+      "updated_at": "2020-12-13T18:34:28 +0000"
     },
     {
       "identifier": "https://github.com/costateixeira/devdays-covid19-vaccine",
@@ -3799,7 +3799,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-13 04:25:54 -0500",
+  "updated": "2020-12-14 04:28:12 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
