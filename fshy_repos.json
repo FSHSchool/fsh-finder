@@ -73,7 +73,7 @@
       "repo_host": "github.com",
       "repo_name": "livd",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-16T06:35:33 +0000"
+      "updated_at": "2020-12-16T22:25:59 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -86,10 +86,10 @@
             "add-package-tgz",
             "bundle-documentation",
             "fix-example",
+            "fix-warnings",
             "genomics-error1-mfm",
-            "genomics-error1-somatic-mfm",
             "master",
-            "new-approach-to-extensibile-value-sets",
+            "r5-experimental",
             "revamp-bundle",
             "terminology-updates"
           ],
@@ -156,7 +156,156 @@
       "repo_host": "github.com",
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-15T20:02:04 +0000"
+      "updated_at": "2020-12-16T20:08:25 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/US-Core",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "fsh_templates_branch"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesOperationDefinition": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "OperationDefinition instance defined in FSH"
+        },
+        "FeaturesSearchParameter": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "SearchParameter instance defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "US Core Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "US-Core",
+      "repo_owner": "HL7",
+      "updated_at": "2020-12-16T20:02:36 +0000"
+    },
+    {
+      "identifier": "https://github.com/IHE/ITI.MHD",
+      "ci_build_url": "https://build.fhir.org/ig/IHE/ITI.MHD",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "iti68response",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesOperationDefinition": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "OperationDefinition instance defined in FSH"
+        },
+        "FeaturesSearchParameter": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "SearchParameter instance defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "ihe.mhd.fhir",
+      "repo_host": "github.com",
+      "repo_name": "ITI.MHD",
+      "repo_owner": "IHE",
+      "updated_at": "2020-12-16T11:03:37 +0000"
     },
     {
       "identifier": "https://github.com/IHE/pharm-vaccination",
@@ -234,80 +383,6 @@
       "updated_at": "2020-12-15T19:43:16 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/US-Core",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "fsh_templates_branch"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "US Core Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "US-Core",
-      "repo_owner": "HL7",
-      "updated_at": "2020-12-15T19:21:08 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/fhir-patient-correction",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-patient-correction",
       "feature_assessments": {
@@ -381,80 +456,6 @@
       "repo_name": "fhir-patient-correction",
       "repo_owner": "HL7",
       "updated_at": "2020-12-15T15:01:05 +0000"
-    },
-    {
-      "identifier": "https://github.com/IHE/ITI.MHD",
-      "ci_build_url": "https://build.fhir.org/ig/IHE/ITI.MHD",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "ihe.mhd.fhir",
-      "repo_host": "github.com",
-      "repo_name": "ITI.MHD",
-      "repo_owner": "IHE",
-      "updated_at": "2020-12-15T14:24:26 +0000"
     },
     {
       "identifier": "https://github.com/openhie/covid-ig",
@@ -2353,7 +2354,7 @@
       "repo_host": "github.com",
       "repo_name": "smart-app-launch",
       "repo_owner": "HL7",
-      "updated_at": "2020-12-15T18:32:01 +0000"
+      "updated_at": "2020-12-16T17:14:00 +0000"
     },
     {
       "identifier": "https://github.com/HL7/davinci-epdx",
@@ -3874,7 +3875,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-16 04:28:38 -0500",
+  "updated": "2020-12-17 04:26:43 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
