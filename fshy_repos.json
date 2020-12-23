@@ -2047,7 +2047,6 @@
           "any_branch": true,
           "branches_with_feature": [
             "master",
-            "transitionToSushi1.0.x",
             "v0.1.2",
             "v0.1.3",
             "v0.1.4",
@@ -3875,7 +3874,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-22 04:26:09 -0500",
+  "updated": "2020-12-23 04:26:25 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
