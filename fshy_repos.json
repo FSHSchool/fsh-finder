@@ -167,6 +167,7 @@
             "master",
             "r5-experimental",
             "remove-abstract-classes",
+            "remove-comorbid-parent",
             "terminology-updates"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -3874,7 +3875,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-23 04:26:25 -0500",
+  "updated": "2020-12-24 04:26:14 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
