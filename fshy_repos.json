@@ -1358,6 +1358,87 @@
       "updated_at": "2020-12-08T14:36:50 +0000"
     },
     {
+      "identifier": "https://github.com/HL7/davinci-pdex-plan-net",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "v1.0.1a"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "fsh_april_2020",
+            "master",
+            "v0.1.4",
+            "v0.1.5",
+            "v0.1.6",
+            "v0.1.7",
+            "v0.1.8",
+            "v1.0.0"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesOperationDefinition": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "OperationDefinition instance defined in FSH"
+        },
+        "FeaturesSearchParameter": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "SearchParameter instance defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "davinci-pdex-plan-net",
+      "repo_host": "github.com",
+      "repo_name": "davinci-pdex-plan-net",
+      "repo_owner": "HL7",
+      "updated_at": "2020-12-04T23:19:16 +0000"
+    },
+    {
       "identifier": "https://github.com/hl7dk/dk-medcom",
       "ci_build_url": "https://build.fhir.org/ig/hl7dk/dk-medcom",
       "feature_assessments": {
@@ -2741,86 +2822,6 @@
       "updated_at": "2020-12-07T17:53:25 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/davinci-pdex-plan-net",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "fsh_april_2020",
-            "master",
-            "v0.1.4",
-            "v0.1.5",
-            "v0.1.6",
-            "v0.1.7",
-            "v0.1.8"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "DaVinci PDEX Plan Net",
-      "repo_host": "github.com",
-      "repo_name": "davinci-pdex-plan-net",
-      "repo_owner": "HL7",
-      "updated_at": "2020-12-04T23:19:16 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
@@ -3875,7 +3876,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2020-12-24 04:26:14 -0500",
+  "updated": "2020-12-25 04:27:25 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
