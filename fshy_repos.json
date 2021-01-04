@@ -32,20 +32,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -72,7 +58,7 @@
       "repo_host": "github.com",
       "repo_name": "riziv-inami",
       "repo_owner": "hl7-be",
-      "updated_at": "2021-01-04T08:17:24 +0000"
+      "updated_at": "2021-01-04T09:07:25 +0000"
     },
     {
       "identifier": "https://github.com/IHE/ITI.MHD",
@@ -106,20 +92,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -181,20 +153,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -255,20 +213,6 @@
 
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": false,
@@ -338,20 +282,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -411,20 +341,6 @@
             "main"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -492,20 +408,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -565,20 +467,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -641,20 +529,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -716,20 +590,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -790,20 +650,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -863,20 +709,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": false,
@@ -939,20 +771,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -1014,20 +832,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1087,20 +891,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -1165,20 +955,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1238,20 +1014,6 @@
             "main"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -1315,20 +1077,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1389,20 +1137,6 @@
 
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": false,
@@ -1471,20 +1205,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1550,20 +1270,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1625,20 +1331,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1698,20 +1390,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": false,
@@ -1776,20 +1454,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1849,20 +1513,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -1924,20 +1574,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -1998,20 +1634,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -2071,20 +1693,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -2160,20 +1768,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -2235,20 +1829,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -2309,20 +1889,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -2394,20 +1960,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -2467,20 +2019,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -2550,20 +2088,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -2629,20 +2153,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -2702,20 +2212,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -2780,20 +2276,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -2857,20 +2339,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -2930,20 +2398,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -3012,20 +2466,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -3086,20 +2526,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -3159,20 +2585,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -3238,20 +2650,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -3311,20 +2709,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -3389,20 +2773,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -3464,20 +2834,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -3537,20 +2893,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -3612,20 +2954,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": false,
           "branches_with_feature": [
@@ -3685,20 +3013,6 @@
             "master"
           ],
           "title": "Profile defined in FSH"
-        },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
@@ -3760,20 +3074,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -3834,20 +3134,6 @@
           ],
           "title": "Profile defined in FSH"
         },
-        "FeaturesOperationDefinition": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "OperationDefinition instance defined in FSH"
-        },
-        "FeaturesSearchParameter": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "SearchParameter instance defined in FSH"
-        },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
@@ -3877,7 +3163,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-04 04:24:54 -0500",
+  "updated": "2021-01-04 08:32:53 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
