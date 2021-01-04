@@ -80,8 +80,6 @@
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="FHIR Shorthand version" data-content="Identifies repositories where any branch includes FHIR Shorthand (FSH). Differentiates between repositories that support SUSHI >= 1.0 (released November 13, 2020) and prior versions.">FSH Version</th>
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a Profile in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a Profile.">FSH: Profile</th>
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Instance in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Instance of a resource (e.g., for examples of Profiles).">FSH: Instance</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an OperationDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an OperationDefinition resource.">FSH: Operation</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a SearchParameter in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a SearchParameter resource.">FSH: SearchParam</th>
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Extension in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Extension resource.">FSH: Extension</th>
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a ValueSet in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a ValueSet resource.">FSH: ValueSet</th>
             <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a CodeSystem in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an a CodeSystem resource.">FSH: CodeSystem</th>
@@ -122,25 +120,6 @@
                 <span data-toggle="popover" data-trigger="hover click" title="FSH: Instance" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
                 {% else %}
                 <span data-toggle="popover" data-trigger="hover click" title="FSH: Instance" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesOperationDefinition.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: OperationDefinition" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: OperationDefinition" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
-
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesSearchParameter.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: SearchParameter" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: SearchParameter" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
                 {% endif %}
                 {% endif %}
             </td>

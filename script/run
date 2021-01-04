@@ -32,8 +32,6 @@ if !File.file?(cache_path)
     FeatureSushiOne,
     FeaturesInstance,
     FeaturesProfile,
-    FeaturesOperationDefinition,
-    FeaturesSearchParameter,
     FeaturesExtension,
     FeaturesValueSet,
     FeaturesCodeSystem
