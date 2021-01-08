@@ -60,7 +60,67 @@
       "repo_host": "github.com",
       "repo_name": "ITI.MHD",
       "repo_owner": "IHE",
-      "updated_at": "2021-01-05T16:55:12 +0000"
+      "updated_at": "2021-01-07T21:07:05 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting",
+      "repo_host": "github.com",
+      "repo_name": "fhir-icsr-ae-reporting",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-07T20:20:44 +0000"
     },
     {
       "identifier": "https://github.com/IHE/pharm-supply",
@@ -1047,66 +1107,6 @@
       "updated_at": "2020-12-11T13:21:45 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting",
-      "repo_host": "github.com",
-      "repo_name": "fhir-icsr-ae-reporting",
-      "repo_owner": "HL7",
-      "updated_at": "2020-12-10T22:25:18 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/genomics-reporting",
       "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
       "feature_assessments": {
@@ -2048,7 +2048,7 @@
       "repo_host": "github.com",
       "repo_name": "smart-app-launch",
       "repo_owner": "HL7",
-      "updated_at": "2021-01-06T17:22:26 +0000"
+      "updated_at": "2021-01-07T21:33:40 +0000"
     },
     {
       "identifier": "https://github.com/HL7/davinci-epdx",
@@ -3227,7 +3227,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-07 04:23:53 -0500",
+  "updated": "2021-01-08 04:22:46 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
