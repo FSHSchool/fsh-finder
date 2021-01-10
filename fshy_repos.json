@@ -1,6 +1,74 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "add-conformance-use-cases",
+            "bundle-documentation",
+            "fix-example",
+            "master",
+            "r5-experimental",
+            "radiation-procedure-redo",
+            "remove-comorbid-parent",
+            "style-guide",
+            "terminology-updates"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: minimal Common Oncology Data Elements (mCODE) Release 1 - US Realm | STU1",
+      "repo_host": "github.com",
+      "repo_name": "fhir-mCODE-ig",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-09T19:14:37 +0000"
+    },
+    {
       "identifier": "https://github.com/IHE/ITI.MHD",
       "ci_build_url": "https://build.fhir.org/ig/IHE/ITI.MHD",
       "feature_assessments": {
@@ -301,76 +369,6 @@
       "repo_name": "fhir-spl",
       "repo_owner": "HL7",
       "updated_at": "2021-01-04T22:46:25 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "add-conformance-use-cases",
-            "bundle-documentation",
-            "fix-example",
-            "master",
-            "r5-experimental",
-            "radiation-procedure-redo",
-            "refactor-value-set-files",
-            "remove-comorbid-parent",
-            "style-guide",
-            "terminology-updates",
-            "test-group"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: minimal Common Oncology Data Elements (mCODE) Release 1 - US Realm | STU1",
-      "repo_host": "github.com",
-      "repo_name": "fhir-mCODE-ig",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-04T21:38:34 +0000"
     },
     {
       "identifier": "https://github.com/hl7-be/riziv-inami",
@@ -1983,6 +1981,66 @@
       "updated_at": "2020-10-01T19:34:15 +0000"
     },
     {
+      "identifier": "https://github.com/DavidPyke/SAFE-COVID-eCR",
+      "ci_build_url": "https://build.fhir.org/ig/DavidPyke/SAFE-COVID-eCR",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "SAFE-COVID-eCR",
+      "repo_host": "github.com",
+      "repo_name": "SAFE-COVID-eCR",
+      "repo_owner": "DavidPyke",
+      "updated_at": "2021-01-10T00:57:30 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/v2-to-fhir",
       "ci_build_url": "https://build.fhir.org/ig/HL7/v2-to-fhir",
       "feature_assessments": {
@@ -3227,7 +3285,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-09 04:21:45 -0500",
+  "updated": "2021-01-10 04:22:31 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
@@ -3251,6 +3309,7 @@
     "https://github.com/openhie/hiv-ig",
     "https://github.com/openhie/covid-ig",
     "https://github.com/DavidPyke/CEQSubscription",
+    "https://github.com/DavidPyke/SAFE-COVID-eCR",
     "https://github.com/HL7Sweden/basprofiler-r4",
     "https://github.com/HL7NZ/northernRegion",
     "https://github.com/HL7NZ/hpi",

@@ -20,6 +20,7 @@ https://github.com/IHE/pharm-supply
 https://github.com/openhie/hiv-ig
 https://github.com/openhie/covid-ig
 https://github.com/DavidPyke/CEQSubscription
+https://github.com/DavidPyke/SAFE-COVID-eCR
 https://github.com/HL7Sweden/basprofiler-r4
 https://github.com/HL7NZ/northernRegion
 https://github.com/HL7NZ/hpi
