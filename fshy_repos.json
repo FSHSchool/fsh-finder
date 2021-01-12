@@ -1,6 +1,187 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/openhie/case-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/openhie/case-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "case-reporting",
+      "repo_host": "github.com",
+      "repo_name": "case-reporting",
+      "repo_owner": "openhie",
+      "updated_at": "2021-01-11T17:48:18 +0000"
+    },
+    {
+      "identifier": "https://github.com/IHE/pharm-supply",
+      "ci_build_url": "https://build.fhir.org/ig/IHE/pharm-supply",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "pharm-supply",
+      "repo_host": "github.com",
+      "repo_name": "pharm-supply",
+      "repo_owner": "IHE",
+      "updated_at": "2021-01-11T17:19:41 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-patient-correction",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-patient-correction",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Patient Corrections Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "fhir-patient-correction",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-11T17:12:25 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
       "feature_assessments": {
@@ -309,66 +490,6 @@
       "repo_name": "fhir-icsr-ae-reporting",
       "repo_owner": "HL7",
       "updated_at": "2021-01-07T20:20:44 +0000"
-    },
-    {
-      "identifier": "https://github.com/IHE/pharm-supply",
-      "ci_build_url": "https://build.fhir.org/ig/IHE/pharm-supply",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "pharm-supply",
-      "repo_host": "github.com",
-      "repo_name": "pharm-supply",
-      "repo_owner": "IHE",
-      "updated_at": "2021-01-05T15:03:51 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-spl",
@@ -858,67 +979,6 @@
       "repo_name": "US-Core",
       "repo_owner": "HL7",
       "updated_at": "2020-12-18T03:28:25 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-patient-correction",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-patient-correction",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main",
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Patient Corrections Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "fhir-patient-correction",
-      "repo_owner": "HL7",
-      "updated_at": "2020-12-17T15:58:31 +0000"
     },
     {
       "identifier": "https://github.com/openhie/covid-ig",
@@ -1488,7 +1548,8 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "master",
+            "updates-to-0.9.3"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -1981,6 +2042,129 @@
       "updated_at": "2020-10-01T19:34:15 +0000"
     },
     {
+      "identifier": "https://github.com/HL7Sweden/basprofiler-r4",
+      "ci_build_url": "https://build.fhir.org/ig/HL7Sweden/basprofiler-r4",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Swedish Base Profiles Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "basprofiler-r4",
+      "repo_owner": "HL7Sweden",
+      "updated_at": "2021-01-12T08:47:08 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/v2-to-fhir",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/v2-to-fhir",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "hbuitendijk-patch-6",
+            "hbuitendijk-patch-7",
+            "hbuitendijk-patch-8",
+            "master"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 Version 2 to FHIR",
+      "repo_host": "github.com",
+      "repo_name": "v2-to-fhir",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-11T19:18:20 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
@@ -2102,69 +2286,6 @@
       "repo_name": "SAFE-COVID-eCR",
       "repo_owner": "DavidPyke",
       "updated_at": "2021-01-10T00:57:30 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/v2-to-fhir",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/v2-to-fhir",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "hbuitendijk-patch-6",
-            "hbuitendijk-patch-7",
-            "hbuitendijk-patch-8",
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 Version 2 to FHIR",
-      "repo_host": "github.com",
-      "repo_name": "v2-to-fhir",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-08T20:04:30 +0000"
     },
     {
       "identifier": "https://github.com/HL7/smart-app-launch",
@@ -2488,66 +2609,6 @@
       "repo_name": "primary-care-data-technical",
       "repo_owner": "aehrc",
       "updated_at": "2020-12-10T22:03:54 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7Sweden/basprofiler-r4",
-      "ci_build_url": "https://build.fhir.org/ig/HL7Sweden/basprofiler-r4",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Swedish Base Profiles Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "basprofiler-r4",
-      "repo_owner": "HL7Sweden",
-      "updated_at": "2020-11-24T16:11:51 +0000"
     },
     {
       "identifier": "https://github.com/AudaciousInquiry/fhir-saner",
@@ -3285,7 +3346,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-11 04:22:52 -0500",
+  "updated": "2021-01-12 04:24:15 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
@@ -3307,6 +3368,7 @@
     "https://github.com/IHE/pharm-vaccination",
     "https://github.com/IHE/pharm-supply",
     "https://github.com/openhie/hiv-ig",
+    "https://github.com/openhie/case-reporting",
     "https://github.com/openhie/covid-ig",
     "https://github.com/DavidPyke/CEQSubscription",
     "https://github.com/DavidPyke/SAFE-COVID-eCR",

@@ -18,6 +18,7 @@ https://github.com/IHE/ITI.MHD
 https://github.com/IHE/pharm-vaccination
 https://github.com/IHE/pharm-supply
 https://github.com/openhie/hiv-ig
+https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
 https://github.com/DavidPyke/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
