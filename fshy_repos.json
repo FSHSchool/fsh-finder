@@ -60,7 +60,67 @@
       "repo_host": "github.com",
       "repo_name": "ITI.MHD",
       "repo_owner": "IHE",
-      "updated_at": "2021-01-13T02:34:29 +0000"
+      "updated_at": "2021-01-14T00:09:30 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-spl",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-spl",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "SPL Mapping FHIR Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "fhir-spl",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-13T22:54:59 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
@@ -120,11 +180,11 @@
       "repo_host": "github.com",
       "repo_name": "fhir-icsr-ae-reporting",
       "repo_owner": "HL7",
-      "updated_at": "2021-01-12T23:52:55 +0000"
+      "updated_at": "2021-01-13T18:48:03 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/fhir-spl",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-spl",
+      "identifier": "https://github.com/hl7dk/KL-dk-tools",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk-tools",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
@@ -155,9 +215,9 @@
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "main"
           ],
           "title": "Extension defined in FSH"
         },
@@ -176,11 +236,11 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "SPL Mapping FHIR Implementation Guide",
+      "ig_title": "Implementation Guide for værktøjsprojektet",
       "repo_host": "github.com",
-      "repo_name": "fhir-spl",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-12T21:06:57 +0000"
+      "repo_name": "KL-dk-tools",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-01-13T17:34:04 +0000"
     },
     {
       "identifier": "https://github.com/SaraAlert/saraalert-fhir-ig",
@@ -672,66 +732,6 @@
       "repo_name": "pharm-vaccination",
       "repo_owner": "IHE",
       "updated_at": "2020-12-29T17:46:46 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/KL-dk-tools",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk-tools",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Implementation Guide for værktøjsprojektet",
-      "repo_host": "github.com",
-      "repo_name": "KL-dk-tools",
-      "repo_owner": "hl7dk",
-      "updated_at": "2020-12-26T13:42:00 +0000"
     },
     {
       "identifier": "https://github.com/HL7/davinci-pdex-formulary",
@@ -3346,7 +3346,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-13 04:25:16 -0500",
+  "updated": "2021-01-14 04:23:02 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
