@@ -1,6 +1,66 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/danka74/basprofiler-r4",
+      "ci_build_url": "https://build.fhir.org/ig/danka74/basprofiler-r4",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Swedish Base Profiles Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "basprofiler-r4",
+      "repo_owner": "danka74",
+      "updated_at": "2021-01-15T08:53:05 +0000"
+    },
+    {
       "identifier": "https://github.com/IHE/ITI.MHD",
       "ci_build_url": "https://build.fhir.org/ig/IHE/ITI.MHD",
       "feature_assessments": {
@@ -60,7 +120,187 @@
       "repo_host": "github.com",
       "repo_name": "ITI.MHD",
       "repo_owner": "IHE",
-      "updated_at": "2021-01-14T00:09:30 +0000"
+      "updated_at": "2021-01-14T22:07:18 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting",
+      "repo_host": "github.com",
+      "repo_name": "fhir-icsr-ae-reporting",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-14T17:08:45 +0000"
+    },
+    {
+      "identifier": "https://github.com/dvci/vaccine-yellow-card-ig",
+      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-yellow-card-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Vaccine Yellow Card Implementation Guide (HealthCards)",
+      "repo_host": "github.com",
+      "repo_name": "vaccine-yellow-card-ig",
+      "repo_owner": "dvci",
+      "updated_at": "2021-01-14T12:04:25 +0000"
+    },
+    {
+      "identifier": "https://github.com/openhie/case-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/openhie/case-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "case-reporting",
+      "repo_host": "github.com",
+      "repo_name": "case-reporting",
+      "repo_owner": "openhie",
+      "updated_at": "2021-01-14T09:37:20 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-spl",
@@ -121,66 +361,6 @@
       "repo_name": "fhir-spl",
       "repo_owner": "HL7",
       "updated_at": "2021-01-13T22:54:59 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-icsr-ae-reporting",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and Reporting",
-      "repo_host": "github.com",
-      "repo_name": "fhir-icsr-ae-reporting",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-13T18:48:03 +0000"
     },
     {
       "identifier": "https://github.com/hl7dk/KL-dk-tools",
@@ -303,8 +483,8 @@
       "updated_at": "2021-01-12T16:53:38 +0000"
     },
     {
-      "identifier": "https://github.com/openhie/case-reporting",
-      "ci_build_url": "https://build.fhir.org/ig/openhie/case-reporting",
+      "identifier": "https://github.com/HL7Sweden/basprofiler-r4",
+      "ci_build_url": "https://build.fhir.org/ig/HL7Sweden/basprofiler-r4",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
@@ -321,30 +501,30 @@
           "title": "Uses SUSHI < 1.0"
         },
         "FeaturesInstance": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         },
@@ -356,11 +536,11 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "case-reporting",
+      "ig_title": "Swedish Base Profiles Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "case-reporting",
-      "repo_owner": "openhie",
-      "updated_at": "2021-01-11T17:48:18 +0000"
+      "repo_name": "basprofiler-r4",
+      "repo_owner": "HL7Sweden",
+      "updated_at": "2021-01-12T10:06:54 +0000"
     },
     {
       "identifier": "https://github.com/IHE/pharm-supply",
@@ -499,6 +679,7 @@
             "remove-comorbid-parent",
             "remove-comorbidities-parent-profile",
             "style-guide",
+            "sushi-1.1-updates",
             "terminology-updates"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -1423,6 +1604,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "dev-0.9-leftovers-ANJ",
             "dev-0.9-leftovers",
             "master"
           ],
@@ -2105,66 +2287,6 @@
       "updated_at": "2021-01-12T16:30:01 +0000"
     },
     {
-      "identifier": "https://github.com/HL7Sweden/basprofiler-r4",
-      "ci_build_url": "https://build.fhir.org/ig/HL7Sweden/basprofiler-r4",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Swedish Base Profiles Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "basprofiler-r4",
-      "repo_owner": "HL7Sweden",
-      "updated_at": "2021-01-12T10:06:54 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
@@ -2676,66 +2798,6 @@
       "repo_name": "fhir-saner",
       "repo_owner": "AudaciousInquiry",
       "updated_at": "2020-11-23T17:34:11 +0000"
-    },
-    {
-      "identifier": "https://github.com/danka74/basprofiler-r4",
-      "ci_build_url": "https://build.fhir.org/ig/danka74/basprofiler-r4",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Swedish Base Profiles Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "basprofiler-r4",
-      "repo_owner": "danka74",
-      "updated_at": "2020-11-19T16:40:56 +0000"
     },
     {
       "identifier": "https://github.com/DavidPyke/CEQSubscription",
@@ -3346,7 +3408,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-14 04:23:02 -0500",
+  "updated": "2021-01-15 04:25:06 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
@@ -3401,6 +3463,7 @@
     "https://github.com/HL7/davinci-pdex-plan-net",
     "https://github.com/HL7/davinci-pas",
     "https://github.com/HL7/fhir-subscription-backport-ig",
+    "https://github.com/dvci/vaccine-yellow-card-ig",
     "https://github.com/SaraAlert/saraalert-fhir-ig"
   ]
 }

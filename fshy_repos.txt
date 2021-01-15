@@ -51,4 +51,5 @@ https://github.com/HL7/fhir-spl
 https://github.com/HL7/davinci-pdex-plan-net
 https://github.com/HL7/davinci-pas
 https://github.com/HL7/fhir-subscription-backport-ig
+https://github.com/dvci/vaccine-yellow-card-ig
 https://github.com/SaraAlert/saraalert-fhir-ig
