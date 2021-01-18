@@ -52,4 +52,5 @@ https://github.com/HL7/davinci-pdex-plan-net
 https://github.com/HL7/davinci-pas
 https://github.com/HL7/fhir-subscription-backport-ig
 https://github.com/dvci/vaccine-credential-ig
+https://github.com/HL7NZ/medtech
 https://github.com/SaraAlert/saraalert-fhir-ig
