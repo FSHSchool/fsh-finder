@@ -22,6 +22,7 @@ https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
 https://github.com/DavidPyke/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
+https://github.com/paulschneider/auto-ig-builder
 https://github.com/HL7Sweden/basprofiler-r4
 https://github.com/HL7NZ/northernRegion
 https://github.com/HL7NZ/hpi
