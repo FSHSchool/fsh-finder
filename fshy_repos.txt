@@ -16,6 +16,7 @@ https://github.com/hl7dk/kl-gateway
 https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/ITI.MHD
 https://github.com/IHE/pharm-vaccination
+https://github.com/IHE/pharm-medicationrecord
 https://github.com/IHE/pharm-supply
 https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting

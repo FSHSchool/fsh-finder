@@ -1,6 +1,186 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/HL7NZ/hpi",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "New Zealand HPI IG",
+      "repo_host": "github.com",
+      "repo_name": "hpi",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-01-26T00:13:27 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7NZ/medtech",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/medtech",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "medTech IG",
+      "repo_host": "github.com",
+      "repo_name": "medtech",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-01-25T18:31:09 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7-be/hl7-be-fhir-medication",
+      "ci_build_url": "https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "hl7-be-fhir-medication",
+      "repo_host": "github.com",
+      "repo_name": "hl7-be-fhir-medication",
+      "repo_owner": "hl7-be",
+      "updated_at": "2021-01-25T15:04:47 +0000"
+    },
+    {
       "identifier": "https://github.com/openhie/hiv-ig",
       "ci_build_url": "https://build.fhir.org/ig/openhie/hiv-ig",
       "feature_assessments": {
@@ -59,7 +239,7 @@
       "repo_host": "github.com",
       "repo_name": "hiv-ig",
       "repo_owner": "openhie",
-      "updated_at": "2021-01-25T08:19:08 +0000"
+      "updated_at": "2021-01-25T09:16:04 +0000"
     },
     {
       "identifier": "https://github.com/IHE/pharm-vaccination",
@@ -260,6 +440,7 @@
             "removeAE",
             "style-guide",
             "trigger-build",
+            "update-comorbidities",
             "update-narratives"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -323,7 +504,9 @@
             "Release1.0",
             "dev-0.9-leftovers-ANJ",
             "dev-0.9-leftovers",
-            "master"
+            "ire_corrections",
+            "master",
+            "release1.0-Corrections-anj"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -559,126 +742,6 @@
       "repo_name": "KL-dk-tools",
       "repo_owner": "hl7dk",
       "updated_at": "2021-01-20T10:45:26 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7-be/hl7-be-fhir-medication",
-      "ci_build_url": "https://build.fhir.org/ig/hl7-be/hl7-be-fhir-medication",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "hl7-be-fhir-medication",
-      "repo_host": "github.com",
-      "repo_name": "hl7-be-fhir-medication",
-      "repo_owner": "hl7-be",
-      "updated_at": "2021-01-18T22:05:09 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7NZ/medtech",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/medtech",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "medTech IG",
-      "repo_host": "github.com",
-      "repo_name": "medtech",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-01-18T21:40:48 +0000"
     },
     {
       "identifier": "https://github.com/danka74/basprofiler-r4",
@@ -1720,6 +1783,67 @@
       "updated_at": "2020-12-09T12:10:12 +0000"
     },
     {
+      "identifier": "https://github.com/IHE/pharm-medicationrecord",
+      "ci_build_url": "https://build.fhir.org/ig/IHE/pharm-medicationrecord",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "pharm-medicationrecord",
+      "repo_host": "github.com",
+      "repo_name": "pharm-medicationrecord",
+      "repo_owner": "IHE",
+      "updated_at": "2020-12-06T13:11:44 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/davinci-pdex-plan-net",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-plan-net",
       "feature_assessments": {
@@ -1969,66 +2093,6 @@
       "repo_name": "fhir-military-service",
       "repo_owner": "HL7",
       "updated_at": "2020-12-02T03:12:46 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7NZ/hpi",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "New Zealand HPI IG",
-      "repo_host": "github.com",
-      "repo_name": "hpi",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2020-11-25T23:07:17 +0000"
     },
     {
       "identifier": "https://github.com/HL7NZ/nhi",
@@ -2346,6 +2410,76 @@
       "updated_at": "2020-10-01T19:34:15 +0000"
     },
     {
+      "identifier": "https://github.com/HL7/smart-app-launch",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/smart-app-launch",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "add-delegation-scope",
+            "add-public-key-client-authn",
+            "add-token-introspection",
+            "authorize-by-post",
+            "discovery-in-well-known",
+            "full-fhirUser-url",
+            "generic-context-conventions",
+            "gino-interactions",
+            "master",
+            "move-to-fsh",
+            "scope-requirements-and-limits"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "SMART App Launch",
+      "repo_host": "github.com",
+      "repo_name": "smart-app-launch",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-25T18:01:09 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
@@ -2595,75 +2729,6 @@
       "repo_name": "SAFE-COVID-eCR",
       "repo_owner": "DavidPyke",
       "updated_at": "2021-01-10T00:57:30 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/smart-app-launch",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/smart-app-launch",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "add-delegation-scope",
-            "add-public-key-client-authn",
-            "add-token-introspection",
-            "authorize-by-post",
-            "full-fhirUser-url",
-            "generic-context-conventions",
-            "gino-interactions",
-            "master",
-            "move-to-fsh",
-            "scope-requirements-and-limits"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "SMART App Launch",
-      "repo_host": "github.com",
-      "repo_name": "smart-app-launch",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-07T21:33:40 +0000"
     },
     {
       "identifier": "https://github.com/HL7/davinci-epdx",
@@ -3531,7 +3596,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-25 04:22:43 -0500",
+  "updated": "2021-01-26 04:23:14 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
@@ -3551,6 +3616,7 @@
     "https://github.com/costateixeira/devdays-covid19-vaccine",
     "https://github.com/IHE/ITI.MHD",
     "https://github.com/IHE/pharm-vaccination",
+    "https://github.com/IHE/pharm-medicationrecord",
     "https://github.com/IHE/pharm-supply",
     "https://github.com/openhie/hiv-ig",
     "https://github.com/openhie/case-reporting",
