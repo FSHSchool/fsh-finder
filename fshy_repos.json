@@ -1,6 +1,68 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/openhie/covid-ig",
+      "ci_build_url": "https://build.fhir.org/ig/openhie/covid-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "clinical-bundle",
+            "es-working",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "WHO Case Reporting for COVID-19 Surveillance",
+      "repo_host": "github.com",
+      "repo_name": "covid-ig",
+      "repo_owner": "openhie",
+      "updated_at": "2021-01-31T04:52:28 +0000"
+    },
+    {
       "identifier": "https://github.com/openhie/case-reporting",
       "ci_build_url": "https://build.fhir.org/ig/openhie/case-reporting",
       "feature_assessments": {
@@ -58,7 +120,209 @@
       "repo_host": "github.com",
       "repo_name": "case-reporting",
       "repo_owner": "openhie",
-      "updated_at": "2021-01-29T05:16:13 +0000"
+      "updated_at": "2021-01-31T04:49:35 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "add-conformance-use-cases",
+            "add-medication-administration",
+            "bundle-documentation",
+            "data-dictionary",
+            "master",
+            "mlt-addGE",
+            "r5-experimental",
+            "remove-comorbid-parent",
+            "remove-comorbidities-parent-profile",
+            "style-guide",
+            "trigger-build",
+            "tumor-size"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "minimal Common Oncology Data Elements (mCODE) Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "fhir-mCODE-ig",
+      "repo_owner": "HL7",
+      "updated_at": "2021-01-30T23:59:56 +0000"
+    },
+    {
+      "identifier": "https://github.com/dvci/vaccine-credential-ig",
+      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Vaccine Credential Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "vaccine-credential-ig",
+      "repo_owner": "dvci",
+      "updated_at": "2021-01-30T19:13:53 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/dk-medcom",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/dk-medcom",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "1.0.1-Documentaion-anj",
+            "Release1.0",
+            "corrections_ire",
+            "dev-0.9-leftovers-ANJ",
+            "dev-0.9-leftovers",
+            "ire_corrections",
+            "ire_friday_29",
+            "master",
+            "release1.0-Corrections-anj"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "fix-for-episode-of-care-identifier",
+            "new-care-communication-profile-anj",
+            "new-care-communication-profile-okt-thaj",
+            "version_0.9"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "DK MedCom Core",
+      "repo_host": "github.com",
+      "repo_name": "dk-medcom",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-01-29T12:50:34 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-spl",
@@ -119,75 +383,6 @@
       "repo_name": "fhir-spl",
       "repo_owner": "HL7",
       "updated_at": "2021-01-28T23:06:02 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/dk-medcom",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/dk-medcom",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "Release1.0",
-            "corrections_ire",
-            "dev-0.9-leftovers-ANJ",
-            "dev-0.9-leftovers",
-            "ire_corrections",
-            "master",
-            "release1.0-Corrections-anj"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "fix-for-episode-of-care-identifier",
-            "new-care-communication-profile-anj",
-            "new-care-communication-profile-okt-thaj",
-            "version_0.9"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "DK MedCom Core",
-      "repo_host": "github.com",
-      "repo_name": "dk-medcom",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-01-28T22:00:29 +0000"
     },
     {
       "identifier": "https://github.com/HL7/genomics-reporting",
@@ -252,78 +447,6 @@
       "repo_name": "genomics-reporting",
       "repo_owner": "HL7",
       "updated_at": "2021-01-28T14:40:56 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "add-conformance-use-cases",
-            "add-medication-administration",
-            "bundle-documentation",
-            "data-dictionary",
-            "master",
-            "mlt-addGE",
-            "r5-experimental",
-            "radiation-onco-next-iteration",
-            "remove-comorbid-parent",
-            "remove-comorbidities-parent-profile",
-            "style-guide",
-            "trigger-build",
-            "tumor-size"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "minimal Common Oncology Data Elements (mCODE) Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "fhir-mCODE-ig",
-      "repo_owner": "HL7",
-      "updated_at": "2021-01-28T01:22:57 +0000"
     },
     {
       "identifier": "https://github.com/HL7NZ/medtech",
@@ -686,66 +809,6 @@
       "repo_name": "pharm-vaccination",
       "repo_owner": "IHE",
       "updated_at": "2021-01-24T15:50:37 +0000"
-    },
-    {
-      "identifier": "https://github.com/dvci/vaccine-credential-ig",
-      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Vaccine Credential Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "vaccine-credential-ig",
-      "repo_owner": "dvci",
-      "updated_at": "2021-01-23T20:48:22 +0000"
     },
     {
       "identifier": "https://github.com/paulschneider/auto-ig-builder",
@@ -1116,6 +1179,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "1032-api-foreign-address-support",
             "master"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -1536,68 +1600,6 @@
       "repo_name": "livd",
       "repo_owner": "HL7",
       "updated_at": "2020-12-18T23:26:06 +0000"
-    },
-    {
-      "identifier": "https://github.com/openhie/covid-ig",
-      "ci_build_url": "https://build.fhir.org/ig/openhie/covid-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "clinical-bundle",
-            "es-working",
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "WHO Case Reporting for COVID-19 Surveillance",
-      "repo_host": "github.com",
-      "repo_name": "covid-ig",
-      "repo_owner": "openhie",
-      "updated_at": "2020-12-14T22:30:28 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-subscription-backport-ig",
@@ -3597,7 +3599,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-01-29 04:24:40 -0500",
+  "updated": "2021-01-31 04:23:16 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
