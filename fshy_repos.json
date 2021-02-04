@@ -40,9 +40,9 @@
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "main"
+
           ],
           "title": "ValueSet defined in FSH"
         },
@@ -58,16 +58,20 @@
       "repo_host": "github.com",
       "repo_name": "medtech",
       "repo_owner": "HL7NZ",
-      "updated_at": "2021-02-03T02:45:10 +0000"
+      "updated_at": "2021-02-04T08:22:35 +0000"
     },
     {
-      "identifier": "https://github.com/JohnMoehrke/BasicAudit",
-      "ci_build_url": "https://build.fhir.org/ig/JohnMoehrke/BasicAudit",
+      "identifier": "https://github.com/dvci/vaccine-credential-ig",
+      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "issue/18",
+            "issue/25",
+            "issue/26",
+            "main",
+            "remove-us-core"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -93,9 +97,9 @@
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "main"
           ],
           "title": "Extension defined in FSH"
         },
@@ -114,11 +118,11 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "BasicAudit",
+      "ig_title": "Vaccine Credential Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "BasicAudit",
-      "repo_owner": "JohnMoehrke",
-      "updated_at": "2021-02-03T00:17:54 +0000"
+      "repo_name": "vaccine-credential-ig",
+      "repo_owner": "dvci",
+      "updated_at": "2021-02-03T23:16:55 +0000"
     },
     {
       "identifier": "https://github.com/openhie/case-reporting",
@@ -178,7 +182,7 @@
       "repo_host": "github.com",
       "repo_name": "case-reporting",
       "repo_owner": "openhie",
-      "updated_at": "2021-02-02T13:24:02 +0000"
+      "updated_at": "2021-02-03T22:56:22 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -190,13 +194,13 @@
             "add-conformance-use-cases",
             "add-medication-administration",
             "bundle-documentation",
-            "correct-file-name-for-profile-intro",
             "data-dictionary",
             "master",
             "mlt-addGE",
             "r5-experimental",
             "remove-comorbid-parent",
             "remove-comorbidities-parent-profile",
+            "remove-tx-cache",
             "style-guide",
             "trigger-build",
             "tumor-size"
@@ -250,7 +254,67 @@
       "repo_host": "github.com",
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
-      "updated_at": "2021-02-02T12:27:36 +0000"
+      "updated_at": "2021-02-03T19:38:52 +0000"
+    },
+    {
+      "identifier": "https://github.com/JohnMoehrke/BasicAudit",
+      "ci_build_url": "https://build.fhir.org/ig/JohnMoehrke/BasicAudit",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "BasicAudit",
+      "repo_host": "github.com",
+      "repo_name": "BasicAudit",
+      "repo_owner": "JohnMoehrke",
+      "updated_at": "2021-02-03T14:18:24 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-icsr-ae-reporting",
@@ -492,66 +556,6 @@
       "repo_name": "hiv-ig",
       "repo_owner": "openhie",
       "updated_at": "2021-01-31T20:43:47 +0000"
-    },
-    {
-      "identifier": "https://github.com/dvci/vaccine-credential-ig",
-      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Vaccine Credential Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "vaccine-credential-ig",
-      "repo_owner": "dvci",
-      "updated_at": "2021-01-31T18:13:58 +0000"
     },
     {
       "identifier": "https://github.com/openhie/covid-ig",
@@ -1476,12 +1480,73 @@
       "updated_at": "2021-01-11T17:12:25 +0000"
     },
     {
+      "identifier": "https://github.com/HL7/davinci-dtr",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-dtr",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "DTR_IG_FSH"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "davinci-dtr",
+      "repo_host": "github.com",
+      "repo_name": "davinci-dtr",
+      "repo_owner": "HL7",
+      "updated_at": "2020-12-23T02:25:23 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/davinci-pdex-formulary",
       "ci_build_url": "https://build.fhir.org/ig/HL7/davinci-pdex-formulary",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "alignWithQHP",
             "v1.0.2a"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -3724,7 +3789,7 @@
       "updated_at": "2020-07-07T22:38:12 +0000"
     }
   ],
-  "updated": "2021-02-03 04:21:31 -0500",
+  "updated": "2021-02-04 04:25:27 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
@@ -3770,6 +3835,7 @@
     "https://github.com/HL7/davinci-epdx",
     "https://github.com/HL7/fhir-mCODE-ig",
     "https://github.com/HL7/v2-to-fhir",
+    "https://github.com/HL7/davinci-dtr",
     "https://github.com/HL7/davinci-pdex-formulary",
     "https://github.com/HL7/genomics-reporting",
     "https://github.com/HL7/US-Core",

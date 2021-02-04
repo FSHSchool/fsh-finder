@@ -42,6 +42,7 @@ https://github.com/HL7/fhir-saner
 https://github.com/HL7/davinci-epdx
 https://github.com/HL7/fhir-mCODE-ig
 https://github.com/HL7/v2-to-fhir
+https://github.com/HL7/davinci-dtr
 https://github.com/HL7/davinci-pdex-formulary
 https://github.com/HL7/genomics-reporting
 https://github.com/HL7/US-Core
