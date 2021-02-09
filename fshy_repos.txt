@@ -40,6 +40,7 @@ https://github.com/HL7/fhir-military-service
 https://github.com/HL7/smart-app-launch
 https://github.com/HL7/fhir-saner
 https://github.com/HL7/davinci-epdx
+https://github.com/HL7/fhir-forfair
 https://github.com/HL7/fhir-mCODE-ig
 https://github.com/HL7/v2-to-fhir
 https://github.com/HL7/davinci-dtr
