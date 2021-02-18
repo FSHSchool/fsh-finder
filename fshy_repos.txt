@@ -25,6 +25,7 @@ https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
 https://github.com/medicalhome-aprn/smart-web-messaging
+https://github.com/ehealthsuisse/ch-rad-order
 https://github.com/DavidPyke/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
 https://github.com/paulschneider/auto-ig-builder
