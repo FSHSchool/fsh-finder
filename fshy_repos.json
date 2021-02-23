@@ -1,13 +1,13 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/HL7NZ/nzbase",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
+      "identifier": "https://github.com/HL7/US-Core",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "fsh_templates_branch"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -26,23 +26,23 @@
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "ValueSet defined in FSH"
         },
@@ -54,11 +54,11 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
+      "ig_title": "US Core Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "nzbase",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-02-22T01:19:26 +0000"
+      "repo_name": "US-Core",
+      "repo_owner": "HL7",
+      "updated_at": "2021-02-23T06:00:22 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -69,11 +69,13 @@
           "branches_with_feature": [
             "add-code-system-for-identifying-codes",
             "add-conformance-use-cases",
+            "autoupdate-diagram-version",
             "code-system-canonical-url",
             "create-assessment-group",
             "data-dictionary",
             "expand-valuesets-rules",
             "master",
+            "mlt-diagramVersioning",
             "r5-experimental",
             "remove-comorbid-parent",
             "remove-comorbidities-parent-profile",
@@ -132,16 +134,16 @@
       "repo_host": "github.com",
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
-      "updated_at": "2021-02-22T01:07:04 +0000"
+      "updated_at": "2021-02-22T22:41:05 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/US-Core",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
+      "identifier": "https://github.com/HL7NZ/nzbase",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "fsh_templates_branch"
+            "master"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -160,23 +162,23 @@
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         },
@@ -188,11 +190,11 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "US Core Implementation Guide",
+      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "US-Core",
-      "repo_owner": "HL7",
-      "updated_at": "2021-02-21T03:47:08 +0000"
+      "repo_name": "nzbase",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-02-22T01:19:26 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-military-service",
@@ -2711,6 +2713,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "stu2.1",
             "transitionToSushi1.0.x",
             "v1.0.1"
           ],
@@ -4030,7 +4033,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-02-22 04:25:14 -0500",
+  "updated": "2021-02-23 04:25:25 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
