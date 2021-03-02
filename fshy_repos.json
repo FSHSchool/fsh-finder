@@ -1,6 +1,66 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/HL7/US-Core",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "fsh_templates_branch"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "US Core Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "US-Core",
+      "repo_owner": "HL7",
+      "updated_at": "2021-03-02T00:49:29 +0000"
+    },
+    {
       "identifier": "https://github.com/openhie/hiv-ig",
       "ci_build_url": "https://build.fhir.org/ig/openhie/hiv-ig",
       "feature_assessments": {
@@ -59,7 +119,67 @@
       "repo_host": "github.com",
       "repo_name": "hiv-ig",
       "repo_owner": "openhie",
-      "updated_at": "2021-02-28T16:41:41 +0000"
+      "updated_at": "2021-03-01T22:59:13 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-military-service",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Military Service History and Status Release 1 - US Realm | STU1",
+      "repo_host": "github.com",
+      "repo_name": "fhir-military-service",
+      "repo_owner": "HL7",
+      "updated_at": "2021-03-01T22:57:18 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -74,6 +194,7 @@
             "code-system-canonical-url",
             "create-assessment-group",
             "data-dictionary",
+            "dd-diff-vs",
             "expand-valuesets-rules",
             "master",
             "r5-experimental",
@@ -213,7 +334,8 @@
             "ire_corrections",
             "ire_friday_29",
             "master",
-            "release1.0-Corrections-anj"
+            "release1.0-Corrections-anj",
+            "remove-slicing-on-entry"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -328,126 +450,6 @@
       "repo_name": "basprofiler-r4",
       "repo_owner": "HL7Sweden",
       "updated_at": "2021-02-26T09:42:11 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/US-Core",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "fsh_templates_branch"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "US Core Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "US-Core",
-      "repo_owner": "HL7",
-      "updated_at": "2021-02-26T00:45:16 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-military-service",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Military Service History and Status Release 1 - US Realm | STU1",
-      "repo_host": "github.com",
-      "repo_name": "fhir-military-service",
-      "repo_owner": "HL7",
-      "updated_at": "2021-02-25T18:36:47 +0000"
     },
     {
       "identifier": "https://github.com/ehealthsuisse/ch-rad-order",
@@ -1116,6 +1118,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "dm-profiles-nk",
             "dm-profiles",
             "issue-44",
             "issue/12",
@@ -1602,6 +1605,7 @@
           "any_branch": true,
           "branches_with_feature": [
             "master",
+            "remove-slicing-from-entry",
             "updates-to-0.9.3",
             "updates-to-1.0"
           ],
@@ -4098,7 +4102,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-03-01 04:23:39 -0500",
+  "updated": "2021-03-02 04:24:35 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
