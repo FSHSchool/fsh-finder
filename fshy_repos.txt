@@ -7,6 +7,7 @@ https://github.com/JohnMoehrke/MHD-fsh
 https://github.com/JohnMoehrke/BasicAudit
 https://github.com/danka74/ko-ig
 https://github.com/danka74/basprofiler-r4
+https://github.com/hl7ch/ch-rad-order
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7-be/riziv-inami
@@ -25,7 +26,6 @@ https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
 https://github.com/medicalhome-aprn/smart-web-messaging
-https://github.com/ehealthsuisse/ch-rad-order
 https://github.com/DavidPyke/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
 https://github.com/paulschneider/auto-ig-builder
