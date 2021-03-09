@@ -1,31 +1,13 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
+      "identifier": "https://github.com/HL7/fhir-spl",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-spl",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "add-code-system-for-identifying-codes",
-            "add-conformance-use-cases",
-            "autoupdate-diagram-version",
-            "code-system-canonical-url",
-            "create-assessment-group",
-            "data-dictionary",
-            "dd-diff-vs",
-            "expand-valuesets-rules",
-            "master",
-            "mlt-examples-timeline",
-            "r5-experimental",
-            "remove-comorbid-parent",
-            "remove-comorbidities-parent-profile",
-            "style-guide",
-            "trigger-build",
-            "tumor-size",
-            "typo",
-            "typos-and-rewording",
-            "update-diagram-and-version"
+            "main"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -39,48 +21,48 @@
         "FeaturesInstance": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "ValueSet defined in FSH"
         },
         "FeaturesCodeSystem": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "minimal Common Oncology Data Elements (mCODE) Implementation Guide",
+      "ig_title": "SPL Mapping FHIR Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "fhir-mCODE-ig",
+      "repo_name": "fhir-spl",
       "repo_owner": "HL7",
-      "updated_at": "2021-03-08T00:47:02 +0000"
+      "updated_at": "2021-03-08T23:31:09 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/nzbase",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
+      "identifier": "https://github.com/HL7NZ/hpi",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
@@ -97,16 +79,16 @@
           "title": "Uses SUSHI < 1.0"
         },
         "FeaturesInstance": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "Profile defined in FSH"
         },
@@ -125,22 +107,22 @@
           "title": "ValueSet defined in FSH"
         },
         "FeaturesCodeSystem": {
-          "any_branch": false,
+          "any_branch": true,
           "branches_with_feature": [
-
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
+      "ig_title": "New Zealand HPI IG",
       "repo_host": "github.com",
-      "repo_name": "nzbase",
+      "repo_name": "hpi",
       "repo_owner": "HL7NZ",
-      "updated_at": "2021-03-07T18:06:23 +0000"
+      "updated_at": "2021-03-08T22:44:18 +0000"
     },
     {
-      "identifier": "https://github.com/hl7ch/ch-rad-order",
-      "ci_build_url": "https://build.fhir.org/ig/hl7ch/ch-rad-order",
+      "identifier": "https://github.com/HL7NZ/nhi",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nhi",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
@@ -192,20 +174,22 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "CH RAD-Order (R4)",
+      "ig_title": "New Zealand NHI IG",
       "repo_host": "github.com",
-      "repo_name": "ch-rad-order",
-      "repo_owner": "hl7ch",
-      "updated_at": "2021-03-07T15:42:44 +0000"
+      "repo_name": "nhi",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-03-08T22:06:15 +0000"
     },
     {
-      "identifier": "https://github.com/hl7ch/ch-etoc",
-      "ci_build_url": "https://build.fhir.org/ig/hl7ch/ch-etoc",
+      "identifier": "https://github.com/standardhealth/fsh-ae",
+      "ci_build_url": "https://build.fhir.org/ig/standardhealth/fsh-ae",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "ae-mdc",
+            "master",
+            "mlt_ae"
           ],
           "title": "Uses SUSHI >= 1.0"
         },
@@ -219,44 +203,44 @@
         "FeaturesInstance": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "Profile defined in FSH"
         },
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "Extension defined in FSH"
         },
         "FeaturesValueSet": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         },
         "FeaturesCodeSystem": {
           "any_branch": true,
           "branches_with_feature": [
-            "main"
+            "master"
           ],
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "CH eTOC (R4)",
+      "ig_title": "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events Release 1 - DRAFT",
       "repo_host": "github.com",
-      "repo_name": "ch-etoc",
-      "repo_owner": "hl7ch",
-      "updated_at": "2021-03-07T13:55:27 +0000"
+      "repo_name": "fsh-ae",
+      "repo_owner": "standardhealth",
+      "updated_at": "2021-03-08T21:34:05 +0000"
     },
     {
       "identifier": "https://github.com/HL7/smart-app-launch",
@@ -265,7 +249,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
-            "add-tenant",
+            "add-security-privacy-considerations",
             "master"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -326,73 +310,7 @@
       "repo_host": "github.com",
       "repo_name": "smart-app-launch",
       "repo_owner": "HL7",
-      "updated_at": "2021-03-06T23:11:48 +0000"
-    },
-    {
-      "identifier": "https://github.com/dvci/vaccine-credential-ig",
-      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "dev",
-            "issue-1",
-            "issue-15",
-            "issue-44",
-            "issue-56",
-            "issue/12",
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "SMART Health Cards: Vaccination &amp; Testing Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "vaccine-credential-ig",
-      "repo_owner": "dvci",
-      "updated_at": "2021-03-05T22:54:22 +0000"
+      "updated_at": "2021-03-08T20:12:05 +0000"
     },
     {
       "identifier": "https://github.com/HL7/genomics-reporting",
@@ -456,7 +374,516 @@
       "repo_host": "github.com",
       "repo_name": "genomics-reporting",
       "repo_owner": "HL7",
-      "updated_at": "2021-03-05T16:56:47 +0000"
+      "updated_at": "2021-03-08T15:48:24 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/fhir-mCODE-ig",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "add-code-system-for-identifying-codes",
+            "add-conformance-use-cases",
+            "autoupdate-diagram-version",
+            "code-system-canonical-url",
+            "create-assessment-group",
+            "data-dictionary",
+            "dd-diff-vs",
+            "expand-valuesets-rules",
+            "master",
+            "mlt-examples-timeline",
+            "r5-experimental",
+            "remove-comorbid-parent",
+            "remove-comorbidities-parent-profile",
+            "style-guide",
+            "trigger-build",
+            "tumor-size",
+            "typo",
+            "typos-and-rewording"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "minimal Common Oncology Data Elements (mCODE) Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "fhir-mCODE-ig",
+      "repo_owner": "HL7",
+      "updated_at": "2021-03-08T13:37:51 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/kl-gateway",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-gateway",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master",
+            "remove-slicing-from-entry",
+            "updates-to-0.9.3",
+            "updates-to-1.0"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "Initial",
+            "remove-specific-interventions",
+            "updates-from-vendor-dialogue",
+            "updates-to-0.9.2"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "KLGateway",
+      "repo_host": "github.com",
+      "repo_name": "kl-gateway",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-03-08T11:12:10 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/KL-dk",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Implementation Guide for fælleskommunal informationsmodel",
+      "repo_host": "github.com",
+      "repo_name": "KL-dk",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-03-08T11:08:24 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7-be/riziv-inami",
+      "ci_build_url": "https://build.fhir.org/ig/hl7-be/riziv-inami",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "riziv-inami",
+      "repo_host": "github.com",
+      "repo_name": "riziv-inami",
+      "repo_owner": "hl7-be",
+      "updated_at": "2021-03-08T10:59:32 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7ch/ch-rad-order",
+      "ci_build_url": "https://build.fhir.org/ig/hl7ch/ch-rad-order",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "CH RAD-Order (R4)",
+      "repo_host": "github.com",
+      "repo_name": "ch-rad-order",
+      "repo_owner": "hl7ch",
+      "updated_at": "2021-03-08T09:33:12 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7NZ/nzbase",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "nzbase",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-03-07T18:06:23 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7ch/ch-etoc",
+      "ci_build_url": "https://build.fhir.org/ig/hl7ch/ch-etoc",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "CH eTOC (R4)",
+      "repo_host": "github.com",
+      "repo_name": "ch-etoc",
+      "repo_owner": "hl7ch",
+      "updated_at": "2021-03-07T13:55:27 +0000"
+    },
+    {
+      "identifier": "https://github.com/dvci/vaccine-credential-ig",
+      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "dev",
+            "issue-15",
+            "issue-44",
+            "issue-56",
+            "issue-60",
+            "issue/12",
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "SMART Health Cards: Vaccination &amp; Testing Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "vaccine-credential-ig",
+      "repo_owner": "dvci",
+      "updated_at": "2021-03-05T22:54:22 +0000"
     },
     {
       "identifier": "https://github.com/HL7NZ/medtech",
@@ -707,127 +1134,6 @@
       "repo_name": "fhir-military-service",
       "repo_owner": "HL7",
       "updated_at": "2021-03-03T04:02:26 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-spl",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-spl",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "SPL Mapping FHIR Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "fhir-spl",
-      "repo_owner": "HL7",
-      "updated_at": "2021-03-02T20:17:20 +0000"
-    },
-    {
-      "identifier": "https://github.com/standardhealth/fsh-ae",
-      "ci_build_url": "https://build.fhir.org/ig/standardhealth/fsh-ae",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master",
-            "mlt_ae"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Standard Health Record (SHR) Adverse Events Release 1 - DRAFT",
-      "repo_host": "github.com",
-      "repo_name": "fsh-ae",
-      "repo_owner": "standardhealth",
-      "updated_at": "2021-03-02T16:16:25 +0000"
     },
     {
       "identifier": "https://github.com/hl7dk/dk-core",
@@ -1192,126 +1498,6 @@
       "updated_at": "2021-02-24T15:31:58 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/hpi",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "New Zealand HPI IG",
-      "repo_host": "github.com",
-      "repo_name": "hpi",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-02-24T03:10:20 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7NZ/nhi",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nhi",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "New Zealand NHI IG",
-      "repo_host": "github.com",
-      "repo_name": "nhi",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-02-24T02:58:18 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7NZ/nzf",
       "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzf",
       "feature_assessments": {
@@ -1430,66 +1616,6 @@
       "repo_name": "fhir-icsr-ae-reporting",
       "repo_owner": "HL7",
       "updated_at": "2021-02-23T22:47:54 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/KL-dk",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Implementation Guide for fælleskommunal informationsmodel",
-      "repo_host": "github.com",
-      "repo_name": "KL-dk",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-02-18T15:16:44 +0000"
     },
     {
       "identifier": "https://github.com/openhie/case-reporting",
@@ -1854,72 +1980,6 @@
       "updated_at": "2021-02-05T12:18:20 +0000"
     },
     {
-      "identifier": "https://github.com/hl7dk/kl-gateway",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-gateway",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master",
-            "remove-slicing-from-entry",
-            "updates-to-0.9.3",
-            "updates-to-1.0"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "Initial",
-            "remove-specific-interventions",
-            "updates-from-vendor-dialogue",
-            "updates-to-0.9.2"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "KLGateway",
-      "repo_host": "github.com",
-      "repo_name": "kl-gateway",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-02-05T07:26:42 +0000"
-    },
-    {
       "identifier": "https://github.com/JohnMoehrke/BasicAudit",
       "ci_build_url": "https://build.fhir.org/ig/JohnMoehrke/BasicAudit",
       "feature_assessments": {
@@ -2038,66 +2098,6 @@
       "repo_name": "KL-dk-tools",
       "repo_owner": "hl7dk",
       "updated_at": "2021-02-01T13:50:37 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7-be/riziv-inami",
-      "ci_build_url": "https://build.fhir.org/ig/hl7-be/riziv-inami",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "riziv-inami",
-      "repo_host": "github.com",
-      "repo_name": "riziv-inami",
-      "repo_owner": "hl7-be",
-      "updated_at": "2021-02-01T10:54:49 +0000"
     },
     {
       "identifier": "https://github.com/IHE/pharm-vaccination",
@@ -4225,7 +4225,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-03-08 04:26:30 -0500",
+  "updated": "2021-03-09 04:27:24 -0500",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/standardhealth/fsh-icare",
