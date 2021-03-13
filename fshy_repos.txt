@@ -24,9 +24,12 @@ https://github.com/hl7dk/kl-gateway
 https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/supplement-template
 https://github.com/IHE/ITI.MHD
+https://github.com/IHE/PCC.PCS
 https://github.com/IHE/pharm-vaccination
 https://github.com/IHE/pharm-medicationrecord
 https://github.com/IHE/pharm-supply
+https://github.com/gatekeeper-project/gk-fhir-ig
+https://github.com/hl7-eu/pcsp
 https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
