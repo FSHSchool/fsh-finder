@@ -1,6 +1,67 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/openhie/hiv-ig",
+      "ci_build_url": "https://build.fhir.org/ig/openhie/hiv-ig",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "hiv-ig",
+      "repo_host": "github.com",
+      "repo_name": "hiv-ig",
+      "repo_owner": "openhie",
+      "updated_at": "2021-03-14T22:40:09 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/genomics-reporting",
       "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
       "feature_assessments": {
@@ -445,67 +506,6 @@
       "repo_name": "kl-gateway",
       "repo_owner": "hl7dk",
       "updated_at": "2021-03-11T08:07:56 +0000"
-    },
-    {
-      "identifier": "https://github.com/openhie/hiv-ig",
-      "ci_build_url": "https://build.fhir.org/ig/openhie/hiv-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main",
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "hiv-ig",
-      "repo_host": "github.com",
-      "repo_name": "hiv-ig",
-      "repo_owner": "openhie",
-      "updated_at": "2021-03-10T20:05:39 +0000"
     },
     {
       "identifier": "https://github.com/HL7NZ/nzf",
@@ -4607,7 +4607,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-03-14 04:28:04 -0400",
+  "updated": "2021-03-15 04:27:44 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
