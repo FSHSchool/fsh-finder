@@ -10,8 +10,10 @@ https://github.com/JohnMoehrke/MHD-fsh
 https://github.com/JohnMoehrke/BasicAudit
 https://github.com/danka74/ko-ig
 https://github.com/danka74/basprofiler-r4
+https://github.com/ahdis/ch-ig
 https://github.com/hl7ch/ch-etoc
 https://github.com/hl7ch/ch-rad-order
+https://github.com/hl7ch/ch-orf
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7-be/riziv-inami
@@ -30,6 +32,7 @@ https://github.com/IHE/pharm-vaccination
 https://github.com/IHE/pharm-medicationrecord
 https://github.com/IHE/pharm-supply
 https://github.com/gatekeeper-project/gk-fhir-ig
+https://github.com/hl7-eu/dgc
 https://github.com/hl7-eu/pcsp
 https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting
