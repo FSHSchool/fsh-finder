@@ -15,6 +15,7 @@ https://github.com/ahdis/ch-ig
 https://github.com/hl7ch/ch-etoc
 https://github.com/hl7ch/ch-rad-order
 https://github.com/hl7ch/ch-orf
+https://github.com/davidhay25/nhip
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7-be/manzana-ig
