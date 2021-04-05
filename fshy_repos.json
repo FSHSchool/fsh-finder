@@ -1,6 +1,66 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/HL7/fhir-military-service",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Military Service History and Status Release 1 - US Realm | STU1",
+      "repo_host": "github.com",
+      "repo_name": "fhir-military-service",
+      "repo_owner": "HL7",
+      "updated_at": "2021-04-05T04:03:02 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-mCODE-ig",
       "feature_assessments": {
@@ -1515,6 +1575,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "1262-support-vaccines-in-api",
             "master"
           ],
           "title": "Uses SUSHI >= 1.0"
@@ -2258,66 +2319,6 @@
       "repo_name": "kl-gateway-care-data",
       "repo_owner": "hl7dk",
       "updated_at": "2021-03-16T16:10:02 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7/fhir-military-service",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Military Service History and Status Release 1 - US Realm | STU1",
-      "repo_host": "github.com",
-      "repo_name": "fhir-military-service",
-      "repo_owner": "HL7",
-      "updated_at": "2021-03-15T19:04:56 +0000"
     },
     {
       "identifier": "https://github.com/IHE/PCC.PCS",
@@ -4147,7 +4148,7 @@
       "repo_host": "github.com",
       "repo_name": "primary-care-data-technical",
       "repo_owner": "aehrc",
-      "updated_at": "2021-04-03T06:30:06 +0000"
+      "updated_at": "2021-04-04T23:58:06 +0000"
     },
     {
       "identifier": "https://github.com/gatekeeper-project/gk-fhir-ig",
@@ -5256,7 +5257,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-04-04 04:28:16 -0400",
+  "updated": "2021-04-05 04:28:18 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
