@@ -1,6 +1,66 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/hl7-be/riziv-medication-record",
+      "ci_build_url": "https://build.fhir.org/ig/hl7-be/riziv-medication-record",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "riziv-medication-record",
+      "repo_host": "github.com",
+      "repo_name": "riziv-medication-record",
+      "repo_owner": "hl7-be",
+      "updated_at": "2021-04-06T07:34:57 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/fhir-military-service",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-military-service",
       "feature_assessments": {
@@ -58,7 +118,192 @@
       "repo_host": "github.com",
       "repo_name": "fhir-military-service",
       "repo_owner": "HL7",
-      "updated_at": "2021-04-05T04:03:02 +0000"
+      "updated_at": "2021-04-05T20:18:30 +0000"
+    },
+    {
+      "identifier": "https://github.com/davidhay25/nhip",
+      "ci_build_url": "https://build.fhir.org/ig/davidhay25/nhip",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "nhip",
+      "repo_host": "github.com",
+      "repo_name": "nhip",
+      "repo_owner": "davidhay25",
+      "updated_at": "2021-04-05T18:51:10 +0000"
+    },
+    {
+      "identifier": "https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV",
+      "ci_build_url": "https://build.fhir.org/ig/jamlung-ri/PEPFAR-WHO-Simple-HIV",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Simple HIV Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "PEPFAR-WHO-Simple-HIV",
+      "repo_owner": "jamlung-ri",
+      "updated_at": "2021-04-05T18:44:31 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7/genomics-reporting",
+      "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "emerge-examples",
+            "genomics-reporting-fsh-mlt",
+            "genomics-reporting-fsh-rpm",
+            "krp",
+            "master",
+            "pw/annotation"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: Clinical Genomics Reporting Release 1 | STU1",
+      "repo_host": "github.com",
+      "repo_name": "genomics-reporting",
+      "repo_owner": "HL7",
+      "updated_at": "2021-04-05T11:27:59 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-mCODE-ig",
@@ -136,66 +381,6 @@
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
       "updated_at": "2021-04-03T23:26:19 +0000"
-    },
-    {
-      "identifier": "https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV",
-      "ci_build_url": "https://build.fhir.org/ig/jamlung-ri/PEPFAR-WHO-Simple-HIV",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Simple HIV Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "PEPFAR-WHO-Simple-HIV",
-      "repo_owner": "jamlung-ri",
-      "updated_at": "2021-04-02T18:18:57 +0000"
     },
     {
       "identifier": "https://github.com/IHE/ITI.MHD",
@@ -1062,66 +1247,6 @@
       "updated_at": "2021-03-30T01:13:37 +0000"
     },
     {
-      "identifier": "https://github.com/davidhay25/nhip",
-      "ci_build_url": "https://build.fhir.org/ig/davidhay25/nhip",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "nhip",
-      "repo_host": "github.com",
-      "repo_name": "nhip",
-      "repo_owner": "davidhay25",
-      "updated_at": "2021-03-29T05:46:27 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/fhir-saner",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-saner",
       "feature_assessments": {
@@ -1696,6 +1821,7 @@
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "STU2.0.0",
             "stu2.1",
             "transitionToSushi1.0.x",
             "v1.0.1",
@@ -1831,70 +1957,6 @@
       "updated_at": "2021-03-23T14:31:20 +0000"
     },
     {
-      "identifier": "https://github.com/HL7/genomics-reporting",
-      "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "genomics-reporting-fsh-mlt",
-            "genomics-reporting-fsh-rpm",
-            "krp",
-            "master",
-            "pw/annotation"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: Clinical Genomics Reporting Release 1 - US Realm | STU1",
-      "repo_host": "github.com",
-      "repo_name": "genomics-reporting",
-      "repo_owner": "HL7",
-      "updated_at": "2021-03-23T12:10:59 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/fhir-med-list-guidance",
       "ci_build_url": "https://build.fhir.org/ig/HL7/fhir-med-list-guidance",
       "feature_assessments": {
@@ -2024,6 +2086,7 @@
             "Fix-r0-ex",
             "align-examples-with-dm-profiles",
             "dev",
+            "fix-resource0",
             "issue-60",
             "main"
           ],
@@ -5257,7 +5320,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-04-05 04:28:18 -0400",
+  "updated": "2021-04-06 04:32:03 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
@@ -5280,6 +5343,7 @@
     "https://github.com/IHTSDO/snomed-ig",
     "https://github.com/hl7-be/hl7-be-fhir",
     "https://github.com/hl7-be/manzana-ig",
+    "https://github.com/hl7-be/riziv-medication-record",
     "https://github.com/hl7-be/riziv-inami",
     "https://github.com/hl7-be/hl7-be-fhir-medication",
     "https://github.com/hl7-be/vitalink-ig",

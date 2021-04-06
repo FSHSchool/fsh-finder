@@ -19,6 +19,7 @@ https://github.com/davidhay25/nhip
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7-be/manzana-ig
+https://github.com/hl7-be/riziv-medication-record
 https://github.com/hl7-be/riziv-inami
 https://github.com/hl7-be/hl7-be-fhir-medication
 https://github.com/hl7-be/vitalink-ig
