@@ -14,6 +14,7 @@ https://github.com/danka74/basprofiler-r4
 https://github.com/ahdis/ch-ig
 https://github.com/hl7ch/ch-etoc
 https://github.com/hl7ch/ch-rad-order
+https://github.com/hl7ch/ch-allergyintolerance
 https://github.com/hl7ch/ch-orf
 https://github.com/davidhay25/nhip
 https://github.com/IHTSDO/snomed-ig
