@@ -1,6 +1,66 @@
 {
   "repos": [
     {
+      "identifier": "https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV",
+      "ci_build_url": "https://build.fhir.org/ig/jamlung-ri/PEPFAR-WHO-Simple-HIV",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Simple HIV Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "PEPFAR-WHO-Simple-HIV",
+      "repo_owner": "jamlung-ri",
+      "updated_at": "2021-04-17T21:55:41 +0000"
+    },
+    {
       "identifier": "https://github.com/HL7/genomics-reporting",
       "ci_build_url": "https://build.fhir.org/ig/HL7/genomics-reporting",
       "feature_assessments": {
@@ -130,66 +190,6 @@
       "repo_name": "ITI.MHD",
       "repo_owner": "IHE",
       "updated_at": "2021-04-16T17:50:02 +0000"
-    },
-    {
-      "identifier": "https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV",
-      "ci_build_url": "https://build.fhir.org/ig/jamlung-ri/PEPFAR-WHO-Simple-HIV",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Simple HIV Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "PEPFAR-WHO-Simple-HIV",
-      "repo_owner": "jamlung-ri",
-      "updated_at": "2021-04-16T14:58:54 +0000"
     },
     {
       "identifier": "https://github.com/hl7-eu/dgc",
@@ -5681,7 +5681,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-04-17 04:31:00 -0400",
+  "updated": "2021-04-18 04:30:00 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
