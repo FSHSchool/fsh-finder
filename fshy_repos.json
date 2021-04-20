@@ -1,8 +1,8 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/hl7dk/kl-gateway-national-care-data",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-gateway-care-data",
+      "identifier": "https://github.com/hl7dk/kl-gateway-municipality-care-data",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-gateway-national-care-data",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
@@ -54,11 +54,312 @@
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "KLGatewayCareData",
+      "ig_title": "KLGatewayMunicipalityCareData",
       "repo_host": "github.com",
-      "repo_name": "kl-gateway-national-care-data",
+      "repo_name": "kl-gateway-municipality-care-data",
       "repo_owner": "hl7dk",
-      "updated_at": "2021-04-19T07:11:41 +0000"
+      "updated_at": "2021-04-20T08:01:05 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/KL-dk",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "Implementation Guide for fælleskommunal informationsmodel",
+      "repo_host": "github.com",
+      "repo_name": "KL-dk",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-04-20T07:26:10 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7NZ/nzbase",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
+      "repo_host": "github.com",
+      "repo_name": "nzbase",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-04-20T02:23:56 +0000"
+    },
+    {
+      "identifier": "https://github.com/HL7NZ/hpi",
+      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "New Zealand HPI IG",
+      "repo_host": "github.com",
+      "repo_name": "hpi",
+      "repo_owner": "HL7NZ",
+      "updated_at": "2021-04-20T01:16:47 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7-eu/dgc",
+      "ci_build_url": "https://build.fhir.org/ig/hl7-eu/dgc",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "dgc",
+      "repo_host": "github.com",
+      "repo_name": "dgc",
+      "repo_owner": "hl7-eu",
+      "updated_at": "2021-04-19T10:52:36 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/dk-core",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/dk-core-r4",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "going-fshing",
+            "master"
+          ],
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "HL7 FHIR Implementation Guide: DK Core",
+      "repo_host": "github.com",
+      "repo_name": "dk-core",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-04-19T08:08:29 +0000"
     },
     {
       "identifier": "https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV",
@@ -252,66 +553,6 @@
       "updated_at": "2021-04-16T17:50:02 +0000"
     },
     {
-      "identifier": "https://github.com/hl7-eu/dgc",
-      "ci_build_url": "https://build.fhir.org/ig/hl7-eu/dgc",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "dgc",
-      "repo_host": "github.com",
-      "repo_name": "dgc",
-      "repo_owner": "hl7-eu",
-      "updated_at": "2021-04-16T06:41:39 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/US-Core",
       "ci_build_url": "https://build.fhir.org/ig/HL7/US-Core",
       "feature_assessments": {
@@ -491,66 +732,6 @@
       "repo_name": "ch-rad-order",
       "repo_owner": "hl7ch",
       "updated_at": "2021-04-15T14:38:53 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/KL-dk",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/KL-dk",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "Implementation Guide for fælleskommunal informationsmodel",
-      "repo_host": "github.com",
-      "repo_name": "KL-dk",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-04-15T14:18:02 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-military-service",
@@ -1235,66 +1416,6 @@
       "updated_at": "2021-04-13T06:29:41 +0000"
     },
     {
-      "identifier": "https://github.com/HL7NZ/nzbase",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/nzbase",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7® FHIR® New Zealand Base Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "nzbase",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-04-12T22:39:10 +0000"
-    },
-    {
       "identifier": "https://github.com/HL7/smart-web-messaging",
       "ci_build_url": "https://build.fhir.org/ig/HL7/smart-web-messaging",
       "feature_assessments": {
@@ -1491,12 +1612,9 @@
             "Fix-r0-ex",
             "constrain-observation-status",
             "dev",
-            "fix-meta-security-inconsistency",
             "issue-60",
             "main",
-            "minor-corrections",
             "omnibus-ig-fixes",
-            "remove-category",
             "remove-contact",
             "review-2021-04-12"
           ],
@@ -3046,127 +3164,6 @@
       "repo_name": "empty-ig",
       "repo_owner": "hl7dk",
       "updated_at": "2021-03-20T14:51:40 +0000"
-    },
-    {
-      "identifier": "https://github.com/hl7dk/dk-core",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/dk-core-r4",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "going-fshing",
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "HL7 FHIR Implementation Guide: DK Core",
-      "repo_host": "github.com",
-      "repo_name": "dk-core",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-03-20T14:29:06 +0000"
-    },
-    {
-      "identifier": "https://github.com/HL7NZ/hpi",
-      "ci_build_url": "https://build.fhir.org/ig/HL7NZ/hpi",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "master"
-          ],
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "New Zealand HPI IG",
-      "repo_host": "github.com",
-      "repo_name": "hpi",
-      "repo_owner": "HL7NZ",
-      "updated_at": "2021-03-09T19:28:03 +0000"
     },
     {
       "identifier": "https://github.com/danka74/basprofiler-r4",
@@ -5681,7 +5678,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-04-19 04:33:04 -0400",
+  "updated": "2021-04-20 04:32:23 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
@@ -5710,9 +5707,9 @@
     "https://github.com/hl7-be/hl7-be-fhir-medication",
     "https://github.com/hl7-be/vitalink-ig",
     "https://github.com/hl7dk/KL-dk",
+    "https://github.com/hl7dk/kl-gateway-municipality-care-data",
     "https://github.com/hl7dk/KL-dk-tools",
     "https://github.com/hl7dk/kl-ffb-messaging",
-    "https://github.com/hl7dk/kl-gateway-national-care-data",
     "https://github.com/hl7dk/dk-core",
     "https://github.com/hl7dk/dk-medcom",
     "https://github.com/hl7dk/kl-gateway",

@@ -25,9 +25,9 @@ https://github.com/hl7-be/riziv-inami
 https://github.com/hl7-be/hl7-be-fhir-medication
 https://github.com/hl7-be/vitalink-ig
 https://github.com/hl7dk/KL-dk
+https://github.com/hl7dk/kl-gateway-municipality-care-data
 https://github.com/hl7dk/KL-dk-tools
 https://github.com/hl7dk/kl-ffb-messaging
-https://github.com/hl7dk/kl-gateway-national-care-data
 https://github.com/hl7dk/dk-core
 https://github.com/hl7dk/dk-medcom
 https://github.com/hl7dk/kl-gateway
