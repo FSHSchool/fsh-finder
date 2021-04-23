@@ -81,7 +81,9 @@ class RepoSourceGitHubOrgs < RepoSource
     [
       'HL7',
       'hl7dk',
-      'HL7NZ'
+      'HL7NZ',
+      'hl7-eu',
+      'who-int'
     ].map do |org|
       Util.github_repos_for_user(org).map { |r| Repo.new(org, r) }
     end.flatten
