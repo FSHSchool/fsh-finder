@@ -54,21 +54,29 @@ RSpec.describe FeatureBase do
 
   context FeaturesOperationDefinition do
     it 'check positive' do
-      expect(FeaturesOperationDefinition.assess(@repo_fsh_positive)).to be true
+      skip 'Not currently in use' do
+        expect(FeaturesOperationDefinition.assess(@repo_fsh_positive)).to be true
+      end
     end
 
     it 'check negative' do
-      expect(FeaturesOperationDefinition.assess(@repo_empty)).to be false
+      skip 'Not currently in use' do
+        expect(FeaturesOperationDefinition.assess(@repo_empty)).to be false
+      end
     end
   end
 
-  context FeaturesOperationDefinition do
+  context FeaturesSearchParameter do
     it 'check positive' do
-      expect(FeaturesOperationDefinition.assess(@repo_fsh_positive)).to be true
+      skip 'Not currently in use' do
+        expect(FeaturesSearchParameter.assess(@repo_fsh_positive)).to be true
+      end
     end
 
     it 'check negative' do
-      expect(FeaturesOperationDefinition.assess(@repo_empty)).to be false
+      skip 'Not currently in use' do
+        expect(FeaturesSearchParameter.assess(@repo_empty)).to be false
+      end
     end
   end
 end
