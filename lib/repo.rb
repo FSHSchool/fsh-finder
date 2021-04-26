@@ -64,6 +64,7 @@ class Repo
     @feature_assessments[feature_class.name] = {
       any_branch: !branches_with_feature.empty?,
       branches_with_feature: branches_with_feature,
+      main_or_master_with_feature: branches_with_feature.include?('main') || branches_with_feature.include?('master'),
       title: feature_class::TITLE
     }
   end

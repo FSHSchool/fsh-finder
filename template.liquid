@@ -82,7 +82,7 @@
         <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong> Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
     </div>
 
-    <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0.</p>
+    <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0. The badge is dimmed (<span class="badge badge-success" style="background-color: #aeddb1;">1.0</span>) if FSH is not supported on <code>main</code> or <code>master</code>.</p>
     <table class="table table-sm table-striped">
         <thead class="thead-dark">
         <tr>
@@ -109,7 +109,7 @@
             </td>
             <td>
                 {% if repo.feature_assessments.FeatureSushiOne.any_branch %}
-                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="{{ repo.feature_assessments.FeatureSushiOne.branches_with_feature | join: ", " }}">1.0</span>
+                    <span class="badge badge-success" style="{% if repo.feature_assessments.FeatureSushiOne.main_or_master_with_feature != true %}background-color: #aeddb1;{% endif %}" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="{{ repo.feature_assessments.FeatureSushiOne.branches_with_feature | join: ", " }}">1.0</span>
                 {% elsif repo.feature_assessments.FeatureSushiOld.any_branch %}
                     <span class="badge badge-warning">0.x</span>
                 {% else %}
