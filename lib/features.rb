@@ -35,7 +35,7 @@ class FeaturesProfile < FeatureBase
   TITLE = 'Profile defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'Profile: ')
+    Util.github_search_fsh_in_repo(repo, 'Profile: ', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -45,7 +45,7 @@ class FeaturesInstance < FeatureBase
   TITLE = 'Instances defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'Instance: ')
+    Util.github_search_fsh_in_repo(repo, 'Instance: ', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -55,7 +55,7 @@ class FeaturesOperationDefinition < FeatureBase
   TITLE = 'OperationDefinition instance defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'InstanceOf: OperationDefinition')
+    Util.github_search_fsh_in_repo(repo, 'InstanceOf: OperationDefinition', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -65,7 +65,7 @@ class FeaturesSearchParameter < FeatureBase
   TITLE = 'SearchParameter instance defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'InstanceOf: SearchParameter')
+    Util.github_search_fsh_in_repo(repo, 'InstanceOf: SearchParameter', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -75,7 +75,7 @@ class FeaturesExtension < FeatureBase
   TITLE = 'Extension defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'Extension: ')
+    Util.github_search_fsh_in_repo(repo, 'Extension: ', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -85,7 +85,7 @@ class FeaturesValueSet < FeatureBase
   TITLE = 'ValueSet defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'ValueSet: ')
+    Util.github_search_fsh_in_repo(repo, 'ValueSet: ', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end
 
@@ -95,6 +95,6 @@ class FeaturesCodeSystem < FeatureBase
   TITLE = 'ValueSet defined in FSH'.freeze
 
   def self.assess(repo)
-    Util.github_search_fsh_in_repo(repo, 'CodeSystem: ')
+    Util.github_search_fsh_in_repo(repo, 'CodeSystem: ', repo.sushi1? ? 'input/fsh' : 'fsh')
   end
 end

@@ -54,9 +54,9 @@ class Util
   # @param repo [Repo]
   # @param search_string [String] String to search for
   # @return [Integer] Number of search results found
-  def self.github_search_fsh_in_repo(repo, search_string)
+  def self.github_search_fsh_in_repo(repo, search_string, in_path = nil)
     url = 'https://api.github.com/search/code'
-    query = { q: %(repo:#{repo.owner}/#{repo.name} extension:fsh "#{search_string}") }
+    query = { q: %(repo:#{repo.owner}/#{repo.name}#{' path:' + in_path if in_path} extension:fsh "#{search_string}") }
     response = github_get(url, {query: query})
 
     return false if response.code == 422 # appears when repo isn't public
