@@ -83,7 +83,8 @@ class RepoSourceGitHubOrgs < RepoSource
       'hl7dk',
       'HL7NZ',
       'hl7-eu',
-      'who-int'
+      'who-int',
+      'openhie'
     ].map do |org|
       Util.github_repos_for_user(org).map { |r| Repo.new(org, r) }
     end.flatten
