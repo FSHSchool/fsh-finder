@@ -93,4 +93,9 @@ https://github.com/dvci/vaccine-credential-ig
 https://github.com/hl7dk/empty-ig
 https://github.com/who-int/svc
 https://github.com/who-int/svc-ips
+https://github.com/openhie/case-reporting-hiv-vn
+https://github.com/openhie/empty-fhir-ig
+https://github.com/openhie/empty-fhir-ig-local-template
+https://github.com/openhie/IG_with_issue_screening
+https://github.com/openhie/ihris-relationship
 https://github.com/SaraAlert/saraalert-fhir-ig
