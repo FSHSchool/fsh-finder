@@ -2,6 +2,7 @@ https://github.com/tmh-mjolner/KLGateway
 https://github.com/hl7-it/dossier-pharma
 https://github.com/hl7-it/base
 https://github.com/hl7-it/terminology
+https://github.com/hitstdio/sample-ig
 https://github.com/standardhealth/fsh-icare
 https://github.com/standardhealth/fsh-pct
 https://github.com/standardhealth/fsh-ae
