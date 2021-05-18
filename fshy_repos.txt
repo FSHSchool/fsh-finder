@@ -66,6 +66,7 @@ https://github.com/AudaciousInquiry/fhir-saner
 https://github.com/HL7/fhir-med-list-guidance
 https://github.com/HL7/livd
 https://github.com/HL7/fhir-military-service
+https://github.com/HL7/fhir-ips
 https://github.com/HL7/smart-app-launch
 https://github.com/HL7/fhir-saner
 https://github.com/HL7/davinci-epdx
