@@ -1,14 +1,19 @@
 {
   "repos": [
     {
-      "identifier": "https://github.com/hl7dk/kl-ffb-messaging",
-      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-ffb-messaging",
+      "identifier": "https://github.com/dvci/vaccine-credential-ig",
+      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
       "feature_assessments": {
         "FeatureSushiOne": {
           "any_branch": true,
           "branches_with_feature": [
+            "Fix-r0-ex",
+            "dev",
+            "issue-142",
             "main",
-            "master"
+            "omnibus-ig-fixes",
+            "review-2021-04-12",
+            "terminology-improvements"
           ],
           "main_or_master_with_feature": true,
           "title": "Uses SUSHI >= 1.0"
@@ -22,17 +27,17 @@
           "title": "Uses SUSHI < 1.0"
         },
         "FeaturesInstance": {
-          "any_branch": true,
+          "any_branch": false,
           "branches_with_feature": [
-            "master"
+
           ],
-          "main_or_master_with_feature": true,
+          "main_or_master_with_feature": false,
           "title": "Instances defined in FSH"
         },
         "FeaturesProfile": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "main_or_master_with_feature": true,
           "title": "Profile defined in FSH"
@@ -40,7 +45,7 @@
         "FeaturesExtension": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "main_or_master_with_feature": true,
           "title": "Extension defined in FSH"
@@ -48,7 +53,7 @@
         "FeaturesValueSet": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "main_or_master_with_feature": true,
           "title": "ValueSet defined in FSH"
@@ -56,17 +61,17 @@
         "FeaturesCodeSystem": {
           "any_branch": true,
           "branches_with_feature": [
-            "master"
+            "main"
           ],
           "main_or_master_with_feature": true,
           "title": "ValueSet defined in FSH"
         }
       },
-      "ig_title": "KLFFBMessaging",
+      "ig_title": "SMART Health Cards: Vaccination &amp; Testing Implementation Guide",
       "repo_host": "github.com",
-      "repo_name": "kl-ffb-messaging",
-      "repo_owner": "hl7dk",
-      "updated_at": "2021-05-21T08:50:37 +0000"
+      "repo_name": "vaccine-credential-ig",
+      "repo_owner": "dvci",
+      "updated_at": "2021-05-22T17:59:58 +0000"
     },
     {
       "identifier": "https://github.com/hl7ch/ch-rad-order",
@@ -134,7 +139,7 @@
       "repo_host": "github.com",
       "repo_name": "ch-rad-order",
       "repo_owner": "hl7ch",
-      "updated_at": "2021-05-21T07:55:27 +0000"
+      "updated_at": "2021-05-22T17:08:48 +0000"
     },
     {
       "identifier": "https://github.com/hl7ch/ch-orf",
@@ -202,7 +207,75 @@
       "repo_host": "github.com",
       "repo_name": "ch-orf",
       "repo_owner": "hl7ch",
-      "updated_at": "2021-05-21T07:47:36 +0000"
+      "updated_at": "2021-05-22T14:24:36 +0000"
+    },
+    {
+      "identifier": "https://github.com/hl7dk/kl-ffb-messaging",
+      "ci_build_url": "https://build.fhir.org/ig/hl7dk/kl-ffb-messaging",
+      "feature_assessments": {
+        "FeatureSushiOne": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "main",
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "Uses SUSHI >= 1.0"
+        },
+        "FeatureSushiOld": {
+          "any_branch": false,
+          "branches_with_feature": [
+
+          ],
+          "main_or_master_with_feature": false,
+          "title": "Uses SUSHI < 1.0"
+        },
+        "FeaturesInstance": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "Instances defined in FSH"
+        },
+        "FeaturesProfile": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "Profile defined in FSH"
+        },
+        "FeaturesExtension": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "Extension defined in FSH"
+        },
+        "FeaturesValueSet": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "ValueSet defined in FSH"
+        },
+        "FeaturesCodeSystem": {
+          "any_branch": true,
+          "branches_with_feature": [
+            "master"
+          ],
+          "main_or_master_with_feature": true,
+          "title": "ValueSet defined in FSH"
+        }
+      },
+      "ig_title": "KLFFBMessaging",
+      "repo_host": "github.com",
+      "repo_name": "kl-ffb-messaging",
+      "repo_owner": "hl7dk",
+      "updated_at": "2021-05-21T08:50:37 +0000"
     },
     {
       "identifier": "https://github.com/HL7NZ/nhi",
@@ -1024,79 +1097,6 @@
       "repo_name": "fhir-mCODE-ig",
       "repo_owner": "HL7",
       "updated_at": "2021-05-18T14:17:16 +0000"
-    },
-    {
-      "identifier": "https://github.com/dvci/vaccine-credential-ig",
-      "ci_build_url": "https://build.fhir.org/ig/dvci/vaccine-credential-ig",
-      "feature_assessments": {
-        "FeatureSushiOne": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "Fix-r0-ex",
-            "dev",
-            "issue-142",
-            "main",
-            "omnibus-ig-fixes",
-            "review-2021-04-12",
-            "terminology-improvements"
-          ],
-          "main_or_master_with_feature": true,
-          "title": "Uses SUSHI >= 1.0"
-        },
-        "FeatureSushiOld": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "main_or_master_with_feature": false,
-          "title": "Uses SUSHI < 1.0"
-        },
-        "FeaturesInstance": {
-          "any_branch": false,
-          "branches_with_feature": [
-
-          ],
-          "main_or_master_with_feature": false,
-          "title": "Instances defined in FSH"
-        },
-        "FeaturesProfile": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "main_or_master_with_feature": true,
-          "title": "Profile defined in FSH"
-        },
-        "FeaturesExtension": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "main_or_master_with_feature": true,
-          "title": "Extension defined in FSH"
-        },
-        "FeaturesValueSet": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "main_or_master_with_feature": true,
-          "title": "ValueSet defined in FSH"
-        },
-        "FeaturesCodeSystem": {
-          "any_branch": true,
-          "branches_with_feature": [
-            "main"
-          ],
-          "main_or_master_with_feature": true,
-          "title": "ValueSet defined in FSH"
-        }
-      },
-      "ig_title": "SMART Health Cards: Vaccination &amp; Testing Implementation Guide",
-      "repo_host": "github.com",
-      "repo_name": "vaccine-credential-ig",
-      "repo_owner": "dvci",
-      "updated_at": "2021-05-18T02:48:11 +0000"
     },
     {
       "identifier": "https://github.com/HL7/fhir-saner",
@@ -7010,7 +7010,7 @@
       "updated_at": "2020-07-28T04:04:17 +0000"
     }
   ],
-  "updated": "2021-05-22 04:32:47 -0400",
+  "updated": "2021-05-23 04:32:36 -0400",
   "fshy_repos": [
     "https://github.com/tmh-mjolner/KLGateway",
     "https://github.com/hl7-it/dossier-pharma",
