@@ -49,6 +49,7 @@ https://github.com/barbrov/wof-portal-fhir-ig
 https://github.com/openhie/hiv-ig
 https://github.com/openhie/case-reporting
 https://github.com/openhie/covid-ig
+https://github.com/daniel-thomson/CIRImmunization
 https://github.com/medicalhome-aprn/smart-web-messaging
 https://github.com/DavidPyke/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
@@ -91,6 +92,7 @@ https://github.com/HL7/davinci-pdex-plan-net
 https://github.com/HL7/davinci-pas
 https://github.com/HL7/fhir-subscription-backport-ig
 https://github.com/dvci/vaccine-credential-ig
+https://github.com/HL7/fhir-radiation-dose-summary-ig
 https://github.com/hl7dk/empty-ig
 https://github.com/who-int/svc
 https://github.com/who-int/svc-ips
