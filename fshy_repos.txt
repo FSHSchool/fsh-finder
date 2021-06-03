@@ -38,6 +38,7 @@ https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/supplement-template
 https://github.com/IHE/ITI.MHD
 https://github.com/IHE/pharm-vaccination
+https://github.com/IHE/RO.XRTS
 https://github.com/IHE/pharm-medicationrecord
 https://github.com/IHE/pharm-supply
 https://github.com/IHE/ITI.mCSD
@@ -75,6 +76,7 @@ https://github.com/HL7/davinci-epdx
 https://github.com/HL7/fhir-forfair
 https://github.com/HL7/fhir-mCODE-ig
 https://github.com/HL7/v2-to-fhir
+https://github.com/HL7/fhir-radiation-dose-summary-ig
 https://github.com/HL7/davinci-dtr
 https://github.com/HL7/davinci-pdex-formulary
 https://github.com/HL7/genomics-reporting
@@ -93,7 +95,6 @@ https://github.com/HL7/davinci-pdex-plan-net
 https://github.com/HL7/davinci-pas
 https://github.com/HL7/fhir-subscription-backport-ig
 https://github.com/dvci/vaccine-credential-ig
-https://github.com/HL7/fhir-radiation-dose-summary-ig
 https://github.com/hl7dk/empty-ig
 https://github.com/who-int/svc
 https://github.com/who-int/svc-ips
