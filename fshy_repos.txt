@@ -37,6 +37,7 @@ https://github.com/jamlung-ri/PEPFAR-WHO-Simple-HIV
 https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/supplement-template
 https://github.com/IHE/ITI.MHD
+https://github.com/IHE/ITI.PDQm
 https://github.com/IHE/pharm-vaccination
 https://github.com/IHE/RO.XRTS
 https://github.com/IHE/pharm-medicationrecord
