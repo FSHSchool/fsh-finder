@@ -19,6 +19,7 @@ https://github.com/hl7ch/ch-rad-order
 https://github.com/hl7ch/ch-allergyintolerance
 https://github.com/hl7ch/ch-orf
 https://github.com/davidhay25/nhip
+https://github.com/Carequality/CEQSubscription
 https://github.com/IHTSDO/snomed-ig
 https://github.com/hl7-be/hl7-be-fhir
 https://github.com/hl7-be/manzana-ig
@@ -39,6 +40,7 @@ https://github.com/costateixeira/devdays-covid19-vaccine
 https://github.com/IHE/supplement-template
 https://github.com/IHE/ITI.MHD
 https://github.com/IHE/ITI.PDQm
+https://github.com/IHE/ITI.PIXm
 https://github.com/IHE/pharm-vaccination
 https://github.com/IHE/RO.XRTS
 https://github.com/IHE/pharm-medicationrecord
@@ -56,7 +58,6 @@ https://github.com/openhie/covid-ig
 https://github.com/daniel-thomson/CIRImmunization
 https://github.com/oridashi/item-715-data
 https://github.com/medicalhome-aprn/smart-web-messaging
-https://github.com/Carequality/CEQSubscription
 https://github.com/DavidPyke/SAFE-COVID-eCR
 https://github.com/DavidPyke/HotBeverage
 https://github.com/paulschneider/auto-ig-builder
