@@ -29,6 +29,17 @@ class FeatureSushiOne < FeatureBase
   end
 end
 
+# Assumes default branch has SUSHI >= 1.0. Useful when relying on the GitHub search API to identify repos with
+# FSH rather than manually checking.
+class AssumeFeatureSushiOneDefaultBranch < FeatureBase
+  APPLIES_TO_BRANCHES = :default
+  TITLE = 'Uses SUSHI >= 1.0'.freeze
+
+  def self.assess(repo)
+    true
+  end
+end
+
 # Defines Profiles in FSH?
 class FeaturesProfile < FeatureBase
   APPLIES_TO_BRANCHES = :default

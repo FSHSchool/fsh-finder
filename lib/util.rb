@@ -66,6 +66,26 @@ class Util
     parsed_response['total_count'] > 0
   end
 
+  def self.github_repos_with_fsh_for_user(user)
+    url = 'https://api.github.com/search/code'
+    query = %(extension:fsh path:/input/fsh/ user:#{user})
+
+    page = 1
+    repos = []
+    loop do
+      response = github_get(url, { query: {q: query, per_page: 100, page: page } })
+      parsed = JSON.parse(response.body)
+      break if response.code != 200
+      break if parsed['total_count'] == 0
+      break if parsed['items'].length == 0
+
+      repos << parsed['items'].map {|m| m['repository']['name']}.uniq
+      page += 1
+    end
+
+    repos.flatten.uniq
+  end
+
   def self.github_repos_for_user(user)
     url = "https://api.github.com/users/#{user}/repos"
     repos = []
@@ -74,7 +94,7 @@ class Util
       parsed = JSON.parse(response.body)
       break if parsed.length == 0
 
-      repos << parsed.map{ |r| r['name'] }
+      repos << parsed.map { |r| r['name'] }
     end
 
     repos.flatten

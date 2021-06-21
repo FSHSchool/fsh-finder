@@ -77,24 +77,16 @@
     <a class="btn btn-small btn-outline-success" href="https://github.com/FSHSchool/fsh-finder/issues">Report a problem</a>
 </header>
 
-<div class="container-fluid">
-    <div class="alert alert-secondary" role="alert">
-        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong> Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong>  Only repositories that use <a href="https://fshschool.org/docs/sushi/">SUSHI</a> &ge; 1.0 on the default branch are included. Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
     </div>
 
-    <p><strong>Note:</strong> you can mouse over the "FSH? <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="List of branches would go here">1.0</span>" icons to see which branches in the repository support SUSHI >= 1.0. The badge is dimmed (<span class="badge badge-success" style="background-color: #aeddb1;">1.0</span>) if FSH is not supported on <code>main</code> or <code>master</code>.</p>
     <table class="table table-sm table-striped">
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
             <th scope="col">Implementation Guide</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="FHIR Shorthand version" data-content="Identifies repositories where any branch includes FHIR Shorthand (FSH). Differentiates between repositories that support SUSHI >= 1.0 (released November 13, 2020) and prior versions.">FSH Version</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a Profile in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a Profile.">FSH: Profile</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Instance in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Instance of a resource (e.g., for examples of Profiles).">FSH: Instance</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements an Extension in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an Extension resource.">FSH: Extension</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a ValueSet in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a ValueSet resource.">FSH: ValueSet</th>
-            <th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a CodeSystem in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement an a CodeSystem resource.">FSH: CodeSystem</th>
-            <!--<th scope="col" data-toggle="popover" data-trigger="hover click" title="Implements a StructureDefinition in FSH" data-content="Identifies repositories where the default branch includes FSH used to implement a StructureDefinition resource.">FSH: SD?</th>-->
         </tr>
         </thead>
         <tbody>
@@ -107,66 +99,7 @@
                     <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/{{ repo.repo_owner }}/{{ repo.repo_name }}">{{ repo.repo_owner }} / <strong>{{ repo.repo_name }}</strong></a> updated <time datetime="{{ repo.updated_at }}">{{ repo.updated_at }}</time>{% if repo.ci_build_url %} [<a href="{{ repo.ci_build_url }}">CI build</a>]{% endif %}
                 </div>
             </td>
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch %}
-                    <span class="badge badge-success" style="{% if repo.feature_assessments.FeatureSushiOne.main_or_master_with_feature != true %}background-color: #aeddb1;{% endif %}" data-toggle="popover" data-trigger="hover click" title="Branches requiring SUSHI >= 1.0" data-content="{{ repo.feature_assessments.FeatureSushiOne.branches_with_feature | join: ", " }}">1.0</span>
-                {% elsif repo.feature_assessments.FeatureSushiOld.any_branch %}
-                    <span class="badge badge-warning">0.x</span>
-                {% else %}
-                <span class="badge badge-secondary">No</span>
-                {% endif %}
-            </td>
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesProfile.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Profile" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Profile" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesInstance.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Instance" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Instance" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
 
-
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesExtension.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Extension" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: Extension" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
-
-
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesValueSet.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: ValueSet" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: ValueSet" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
-
-
-            <td>
-                {% if repo.feature_assessments.FeatureSushiOne.any_branch or repo.feature_assessments.FeatureSushiOld.any_branch %}
-                {% if repo.feature_assessments.FeaturesCodeSystem.any_branch %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: CodeSystem" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-success">Yes</span>
-                {% else %}
-                <span data-toggle="popover" data-trigger="hover click" title="FSH: CodeSystem" data-content="Only includes default branch on GitHub due to limitations in the GitHub Search API." class="badge badge-secondary">No</span>
-                {% endif %}
-                {% endif %}
-            </td>
         </tr>
         {% endfor %}
         </tbody>
@@ -176,12 +109,12 @@
         <p>
         <ul>
             <li>The easiest way to add it is to <a href="https://github.com/FHIR/auto-ig-builder">register it for CI builds on build.fhir.org</a>.</li>
-            <li>You can also submit a pull request to add your IG's GitHub repository to the list of manually crawled sources. You can also have every repository in your GitHub org/username manually crawled if you have multiple IGs using FSH. Currently the manually crawled sources are defined <a href="https://github.com/FSHSchool/fsh-finder/blob/main/lib/repo_sources.rb#L57-L78">here</a>.</li>
+            <li>You can also submit a pull request to add your GitHub account to the list of manually crawled sources. Currently the manually crawled accounts are defined <a href="https://github.com/FSHSchool/fsh-finder/blob/main/settings.yml">here</a>.</li>
             <li>If your IG is registered for CI builds or is already covered by the manual crawl sources, and it still does not appear, please <a href="https://github.com/FSHSchool/fsh-finder/issues">log an issue</a>.</li>
         </ul>
         </p>
     </div>
-    <footer class="footer text-center">
+    <footer class="footer text-center" style="margin-bottom: 5em;">
         <div class="container">
             <a class="text-muted" href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md#license">Copyright 2020 The MITRE Corporation</a>. <span class="text-muted">Approved for Public Release; Distribution Unlimited. Public Release Case Number 16-1988.</span>
         </div>

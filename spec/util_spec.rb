@@ -48,4 +48,13 @@ RSpec.describe Util do
       expect( Util.github_check_auth.code).to be 200
     end
   end
+
+  context 'when searching for all FSH in a user\'s repos' do
+    it 'should return Sara Alert' do
+      expect(Util.github_repos_with_fsh_for_user('SaraAlert')).to include('saraalert-fhir-ig')
+    end
+    it 'should return mCODE' do
+      expect(Util.github_repos_with_fsh_for_user('HL7')).to include('fhir-mCODE-ig')
+    end
+  end
 end

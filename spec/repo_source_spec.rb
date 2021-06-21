@@ -12,4 +12,11 @@ RSpec.describe RepoSourceFhirCiBuild do
       expect(repos.length).to be > 0
     end
   end
+
+  context RepoSourceFhirCiBuild do
+    it 'should give us the mCODE IG' do
+      repos = RepoSourceFhirCiBuild.repos.select { |r| r.identifier == @repo_mcode.identifier }
+      expect(repos.length).to be > 0
+    end
+  end
 end

@@ -1,6 +1,7 @@
 require 'httparty'
 require 'json'
 require 'repo'
+require 'yaml'
 
 # Defines a source for FHIR Implementation Guide git repositories that may include FSH.
 # For now, assume that all are hosted on GitHub.
@@ -30,6 +31,8 @@ class RepoSourceFhirCiBuild < RepoSource
 
     repos = build_info.filter_map { |r| create_repo_object_from(r) }
 
+    search_user_repos_for_fsh = {}
+
     # De-duplicate repos
     unique_repos = {}
     repos.each do |r|
@@ -41,8 +44,9 @@ class RepoSourceFhirCiBuild < RepoSource
       # to the GitHub API, and these duplicates won't get caught until the dedupe step in RepoCollection.
       next if unique_repos.values.map{ |existing_unqiue_repo| existing_unqiue_repo.ci_build_url }.include? r.ci_build_url
 
-      # Remove repos that aren't public on GitHub or don't exist
-      next unless Util.github_repo_exists(r)
+      # Search all user's repos for FSH. Cache results so we only do this once per user.
+      search_user_repos_for_fsh[r.owner] ||= Util.github_repos_with_fsh_for_user(r.owner)
+      next unless search_user_repos_for_fsh[r.owner].include? r.name
 
       unique_repos[r.identifier] ||= r
     end
@@ -64,28 +68,17 @@ class RepoSourceFhirCiBuild < RepoSource
   end
 end
 
-# Adds specific repos of interest
-class RepoSourceStatic < RepoSource
-  def self.repos
-    # TODO: Move this to a YAML file
-    [
-        Repo.new('SaraAlert', 'saraalert-fhir-ig'),
-    ].select { |r| Util.github_repo_exists(r)}
-  end
-end
-
-# Crawls all repos for a given GitHub org
+# Uses the GitHub Search API to find FSH in repos belonging to orgs who have repos registered with build.fhir.org,
+# or who are in the manual list in settings.yml
 class RepoSourceGitHubOrgs < RepoSource
   def self.repos
-    # TODO: Move this to a YAML file
-    [
-      'HL7',
-      'hl7dk',
-      'HL7NZ',
-      'hl7-eu',
-      'who-int'
-    ].map do |org|
-      Util.github_repos_for_user(org).map { |r| Repo.new(org, r) }
+    crawl = YAML.load_file('settings.yml')['crawl_orgs']
+
+    crawl << JSON.parse(HTTParty.get('https://build.fhir.org/ig/qas.json', verify: false).body)
+                 .map {|r| r['repo'].split('/')[0] }
+                 .uniq
+    crawl.uniq.flatten.map do |org|
+      Util.github_repos_with_fsh_for_user(org).map { |r| Repo.new(org, r) }
     end.flatten
   end
 end

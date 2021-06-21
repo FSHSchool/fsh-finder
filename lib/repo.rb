@@ -78,6 +78,9 @@ class Repo
   # Does repo support SUSHI >= 1.0?
   # @return [Boolean]
   def sushi1?
+    # Assume branch has SUSHI 1 now that we're using the search API
+    return true
+
     ensure_feature_has_been_assessed(FeatureSushiOne)
 
     @feature_assessments[FeatureSushiOne.name][:any_branch]
