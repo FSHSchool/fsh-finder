@@ -2,6 +2,7 @@ require 'util'
 require 'repo'
 require 'support/git_support'
 
+
 RSpec.describe Util do
   include_context :git_objects
   context 'when checking for GitHub path existence' do
@@ -55,6 +56,22 @@ RSpec.describe Util do
     end
     it 'should return mCODE' do
       expect(Util.github_repos_with_fsh_for_user('HL7')).to include('fhir-mCODE-ig')
+    end
+  end
+
+  context 'when cloning a git repo' do
+    it 'should successfully clone a valid repo' do
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      expect(File.file?(File.join(folder, '_genonce.sh'))).to be(true)
+
+      Util.git_cleanup(folder)
+      expect(File.exist?(folder)).to be(false)
+    end
+
+    it 'should fail to clone an invalid repo' do
+      expect {
+        folder = Util.git_clone('HL7', 'not-actually-a-real-repo')
+      }.to raise_error(Util::GitCloneError)
     end
   end
 end

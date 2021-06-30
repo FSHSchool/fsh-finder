@@ -3,6 +3,9 @@ require 'dotenv'
 require 'json'
 require 'logging'
 require 'digest/md5'
+require 'tmpdir'
+require 'fileutils'
+require 'securerandom'
 
 Dotenv.load(File.expand_path('../.env', File.dirname(__FILE__)))
 
@@ -163,4 +166,38 @@ class Util
     end
     response
   end
+
+  class GitCloneError < StandardError; end
+
+  def self.git_clone(user, repo)
+    # Sanitize inputs
+    regex = /[^0-9A-Za-z_\-]/
+    user.gsub!(regex, '')
+    repo.gsub!(regex, '')
+
+    # Get a temp folder to clone into
+    tmp = File.join(Dir.tmpdir, [SecureRandom.hex, user, repo].join('-'))
+
+    # Clone the repo
+    cmd = "git clone --depth 1 https://github.com/#{user}/#{repo}.git #{tmp} 2>&1"
+    puts "Running: #{cmd}"
+    git_output = %x(#{cmd})
+    status = $?.exitstatus
+    puts "Command finished with status #{status}"
+    raise GitCloneError, "Could not clone #{user}/#{repo}" unless status == 0
+
+    return tmp
+  end
+
+  def self.git_cleanup(folder)
+    tmpdir = Dir.tmpdir
+    if folder.index(tmpdir) != 0
+      raise Exception("Could not delete: #{folder} not inside #{tmpdir}")
+    else
+      FileUtils.remove_dir(folder)
+    end
+  end
+
+  
 end
+
