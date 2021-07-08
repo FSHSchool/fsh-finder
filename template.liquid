@@ -79,7 +79,7 @@
 
 <div class="container">
     <div class="alert alert-success" role="alert">
-        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong>  Only repositories that use <a href="https://fshschool.org/docs/sushi/">SUSHI</a> &ge; 1.0 on the default branch are included. Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
+        <strong>This is a list of GitHub repositories that contain <a href="https://fshschool.org">FSH</a> code.</strong>  Only repositories that use <a href="http://hl7.org/fhir/uv/shorthand/">FSH</a> or <a href="https://fshschool.org/docs/sushi/">SUSHI configuration</a> on the default branch are included. Please see <a href="https://github.com/FSHSchool/fsh-finder/blob/main/README.md">the README</a> for more details on how this works. Last refreshed about <time datetime="{{ updated }}">{{ updated }}</time>.
     </div>
 
     <table class="table table-sm table-striped">
@@ -87,6 +87,7 @@
         <tr>
             <th scope="col">#</th>
             <th scope="col">Implementation Guide</th>
+            <th scope="col">&nbsp;</th>
         </tr>
         </thead>
         <tbody>
@@ -98,6 +99,15 @@
                 <div class="ig-info">
                     <img src="github.png" alt="GitHub Icon" style="width: 1em; padding-bottom: 0.2em;"> <a href="https://github.com/{{ repo.repo_owner }}/{{ repo.repo_name }}">{{ repo.repo_owner }} / <strong>{{ repo.repo_name }}</strong></a> updated <time datetime="{{ repo.updated_at }}">{{ repo.updated_at }}</time>{% if repo.ci_build_url %} [<a href="{{ repo.ci_build_url }}">CI build</a>]{% endif %}
                 </div>
+            </td>
+            <td style="text-align: right;">
+                {% if repo.feature_assessments.FeatureSushiOne.any_branch %}
+                    <span class="badge badge-success" data-toggle="popover" data-trigger="hover click" title="FSH 1.0+" data-content="Default branch includes a <code>input/fsh/</code> folder" data-html="true">FSH 1.0+</span>
+                {% elsif repo.feature_assessments.FeatureSushiOld.any_branch %}
+                    <span class="badge badge-info" data-toggle="popover" data-trigger="hover click" title="FSH 0.x" data-content="Default branch includes a <code>fsh/</code> folder" data-html="true">FSH 0.x</span>
+                {% elsif repo.feature_assessments.FeatureSushiOneConfig.any_branch %}
+                    <span class="badge bg-secondary text-light" data-toggle="popover" data-trigger="hover click" title="Config only" data-content="Default branch includes a <code>sushi-config.yaml</code> file without an <code>input/fsh/</code> folder." data-html="true">Config only</span>
+                {% endif %}
             </td>
 
         </tr>

@@ -1,3 +1,5 @@
+require "as-duration"
+
 # Base class for defining a FSH language feature
 class FeatureBase
   # Assess branch for feature
@@ -7,6 +9,10 @@ class FeatureBase
   def self.assess(repo, branch)
     raise 'not implemented'
   end
+
+  def self.cacheable?
+    false
+  end
 end
 
 # Does branch have a FSH folder for pre-1.0 SUSHI? (Would be at `/fsh`.)
@@ -15,9 +21,11 @@ class FeatureSushiOld < FeatureBase
   TITLE = 'Uses SUSHI < 1.0'.freeze
 
   def self.assess(repo, branch)
-    Util.github_path_exists(repo, branch, 'fsh')
+    # Util.git_file_exists?(repo, 'fsh/*.fsh')
+    Util.github_path_exists(repo, branch, 'fsh/')
   end
 end
+
 
 # Does branch have a FSH folder for >=1.0 SUSHI? (Would be at `/input/fsh`.)
 class FeatureSushiOne < FeatureBase
@@ -25,7 +33,22 @@ class FeatureSushiOne < FeatureBase
   TITLE = 'Uses SUSHI >= 1.0'.freeze
 
   def self.assess(repo, branch)
-    Util.github_path_exists(repo, branch, 'input/fsh')
+    # Util.git_file_exists?(repo, 'input/fsh/*.fsh')
+    Util.github_path_exists(repo, branch, 'input/fsh/')
+  end
+
+  def self.cacheable?
+    30.days
+  end
+end
+
+class FeatureSushiOneConfig < FeatureBase
+  APPLIES_TO_BRANCHES = :all
+  TITLE = 'Uses SUSHI >= 1.0'.freeze
+
+  def self.assess(repo, branch)
+    # Util.git_file_exists?(repo, 'sushi-config.yaml')
+    Util.github_path_exists(repo, branch, 'sushi-config.yaml')
   end
 end
 

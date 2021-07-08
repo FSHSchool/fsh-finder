@@ -21,12 +21,14 @@ if !File.file?(cache_path)
   # Multiple `RepoSource` classes can be listed here to pull repos from multiple sources. See `lib/repo_sources.rb`
   # for details.
   repos_collection = RepoCollection.new(
-    RepoSourceGitHubOrgs.repos
+    RepoSourceGitHubOrgsWithClone.repos
+    # RepoSourceTest.repos
   )
 
   # Assess repos for the FSH language features we want to look for. They are defined in `lib/features.rb`
-  repos_collection.assess_repos(
-    AssumeFeatureSushiOneDefaultBranch
+  repos_collection.assess_repos_thread_pool(
+    FeatureSushiOne,
+    FeatureSushiOld
   )
 
   repos_json = repos_collection.to_json

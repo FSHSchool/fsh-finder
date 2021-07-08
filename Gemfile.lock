@@ -1,9 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    debase (2.3.2)
-      debase-ruby_core_source (~> 0.10.11)
-    debase-ruby_core_source (0.10.12)
+    as-duration (0.1.1)
+    concurrent-ruby (1.1.9)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
     httparty (0.18.1)
@@ -13,8 +12,9 @@ GEM
     liquid (5.0.1)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0225)
+    mime-types-data (3.2021.0704)
     multi_xml (0.6.0)
+    rake (13.0.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -28,14 +28,15 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
-    ruby-debug-ide (2.3.1)
-      debase (~> 2.3.2)
+    ruby-debug-ide (0.7.2)
+      rake (>= 0.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  debase
+  as-duration
+  concurrent-ruby
   dotenv
   httparty
   json

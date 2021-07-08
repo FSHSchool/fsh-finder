@@ -2,6 +2,7 @@ require 'httparty'
 require 'json'
 require 'repo'
 require 'yaml'
+require 'concurrent'
 
 # Defines a source for FHIR Implementation Guide git repositories that may include FSH.
 # For now, assume that all are hosted on GitHub.
@@ -42,7 +43,7 @@ class RepoSourceFhirCiBuild < RepoSource
       # Note that if a repo has been renamed on GitHub, it's possible to have two Repo objects that point to the same
       # GitHub repo but have different `ci_build_url` values. If this happens, there will be some duplicate requests
       # to the GitHub API, and these duplicates won't get caught until the dedupe step in RepoCollection.
-      next if unique_repos.values.map{ |existing_unqiue_repo| existing_unqiue_repo.ci_build_url }.include? r.ci_build_url
+      next if unique_repos.values.map(&:ci_build_url).include? r.ci_build_url
 
       # Search all user's repos for FSH. Cache results so we only do this once per user.
       search_user_repos_for_fsh[r.owner] ||= Util.github_repos_with_fsh_for_user(r.owner)
@@ -80,5 +81,35 @@ class RepoSourceGitHubOrgs < RepoSource
     crawl.uniq.flatten.map do |org|
       Util.github_repos_with_fsh_for_user(org).map { |r| Repo.new(org, r) }
     end.flatten
+  end
+end
+
+class RepoSourceGitHubOrgsWithClone < RepoSource
+  def self.repos
+    crawl = YAML.load_file('settings.yml')['crawl_orgs']
+
+    crawl << JSON.parse(HTTParty.get('https://build.fhir.org/ig/qas.json', verify: false).body)
+                 .map {|r| r['repo'].split('/')[0] }
+                 .uniq
+    crawl = crawl. uniq.flatten
+
+    repos = Concurrent::Array.new()
+    pool = Concurrent::FixedThreadPool.new(10)
+    crawl.each do |org|
+      pool.post do
+        repos << Util.github_repos_for_user(org)
+      end
+    end
+
+    pool.shutdown
+    pool.wait_for_termination
+    return repos.flatten
+  end
+end
+
+
+class RepoSourceTest < RepoSource
+  def self.repos
+    [Util.github_repos_for_user('SaraAlert'), Util.github_repos_for_user('dvci')].flatten
   end
 end

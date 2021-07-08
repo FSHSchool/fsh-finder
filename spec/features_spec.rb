@@ -16,6 +16,11 @@ RSpec.describe FeatureBase do
     it 'check negative with no sushi' do
       expect(FeatureSushiOne.assess(@repo_empty, @ref_empty_repo_default_branch)).to be false
     end
+
+    it 'check negative with no sushi' do
+      r = Repo.new('masnick', 'test-repo-no-commit')
+      expect(FeatureSushiOne.assess(r, 'main')).to be false
+    end
   end
 
   context FeatureSushiOld do

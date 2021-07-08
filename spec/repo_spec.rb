@@ -10,6 +10,10 @@ RSpec.describe Repo do
       repo = Repo.new('fshschool', 'fsh-finder')
       expect(repo.identifier).to eq 'https://github.com/FSHSchool/fsh-finder'
     end
+
+    it 'detects any FSH' do
+      expect(@repo_mcode.any_fsh?).to be(true)
+    end
   end
 
   context 'when retrieving branches' do

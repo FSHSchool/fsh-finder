@@ -57,21 +57,39 @@ RSpec.describe Util do
     it 'should return mCODE' do
       expect(Util.github_repos_with_fsh_for_user('HL7')).to include('fhir-mCODE-ig')
     end
+    it 'should fail gracefully for a nonexistent user' do
+      Util.github_repos_for_user('not-actually-a-real-user-9262047902')
+    end
   end
 
   context 'when cloning a git repo' do
     it 'should successfully clone a valid repo' do
       folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
       expect(File.file?(File.join(folder, '_genonce.sh'))).to be(true)
+    end
 
-      Util.git_cleanup(folder)
-      expect(File.exist?(folder)).to be(false)
+    it 'should successfully update a valid repo' do
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      expect(File.file?(File.join(folder, '_genonce.sh'))).to be(true)
     end
 
     it 'should fail to clone an invalid repo' do
       expect {
         folder = Util.git_clone('HL7', 'not-actually-a-real-repo')
       }.to raise_error(Util::GitCloneError)
+    end
+
+    it 'should gracefully fail to clone an empty repo' do
+      folder = Repo.new('masnick', 'fsh-finder-test-empty').folder
+    end
+
+    it 'should be able to find a file' do
+      expect(Util.git_file_exists?(@repo_mcode, 'input/fsh/*.fsh')).to be(true)
+    end
+
+    it 'should not be able to find a file that isn\'t there' do
+      expect(Util.git_file_exists?(@repo_mcode, 'input/fsh/*.not-actually-a-file')).to be(false)
     end
   end
 end

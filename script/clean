@@ -1,3 +1,24 @@
 #!/usr/bin/env ruby
 
-puts "Not implemented. Please manually clear your generated/ folder (but leave `github.png`)."
+require 'fileutils'
+
+fsh_finder_folder = File.dirname(__dir__)
+
+begin
+  template_context_path = File.join(fsh_finder_folder, 'generated', 'cache.json')
+  File.delete(template_context_path)
+  puts "Deleted #{template_context_path}"
+rescue
+  puts "Could not delete #{template_context_path}"
+end
+
+begin
+  repo_data_cache_path = File.join(fsh_finder_folder, 'generated', 'repo_data')
+  FileUtils.remove_dir(repo_data_cache_path)
+  FileUtils.mkdir_p(repo_data_cache_path)
+  puts "Deleted #{repo_data_cache_path}"
+rescue
+  puts "Could not delete #{repo_data_cache_path}"
+end
+
+
