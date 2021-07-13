@@ -1,6 +1,8 @@
 require 'httparty'
 require 'json'
 require 'repo'
+require 'yaml'
+require 'concurrent'
 
 # Defines a source for FHIR Implementation Guide git repositories that may include FSH.
 # For now, assume that all are hosted on GitHub.
@@ -30,6 +32,8 @@ class RepoSourceFhirCiBuild < RepoSource
 
     repos = build_info.filter_map { |r| create_repo_object_from(r) }
 
+    search_user_repos_for_fsh = {}
+
     # De-duplicate repos
     unique_repos = {}
     repos.each do |r|
@@ -39,10 +43,11 @@ class RepoSourceFhirCiBuild < RepoSource
       # Note that if a repo has been renamed on GitHub, it's possible to have two Repo objects that point to the same
       # GitHub repo but have different `ci_build_url` values. If this happens, there will be some duplicate requests
       # to the GitHub API, and these duplicates won't get caught until the dedupe step in RepoCollection.
-      next if unique_repos.values.map{ |existing_unqiue_repo| existing_unqiue_repo.ci_build_url }.include? r.ci_build_url
+      next if unique_repos.values.map(&:ci_build_url).include? r.ci_build_url
 
-      # Remove repos that aren't public on GitHub or don't exist
-      next unless Util.github_repo_exists(r)
+      # Search all user's repos for FSH. Cache results so we only do this once per user.
+      search_user_repos_for_fsh[r.owner] ||= Util.github_repos_with_fsh_for_user(r.owner)
+      next unless search_user_repos_for_fsh[r.owner].include? r.name
 
       unique_repos[r.identifier] ||= r
     end
@@ -64,29 +69,47 @@ class RepoSourceFhirCiBuild < RepoSource
   end
 end
 
-# Adds specific repos of interest
-class RepoSourceStatic < RepoSource
+# Uses the GitHub Search API to find FSH in repos belonging to orgs who have repos registered with build.fhir.org,
+# or who are in the manual list in settings.yml
+class RepoSourceGitHubOrgs < RepoSource
   def self.repos
-    # TODO: Move this to a YAML file
-    [
-        Repo.new('SaraAlert', 'saraalert-fhir-ig'),
-    ].select { |r| Util.github_repo_exists(r)}
+    crawl = YAML.load_file('settings.yml')['crawl_orgs']
+
+    crawl << JSON.parse(HTTParty.get('https://build.fhir.org/ig/qas.json', verify: false).body)
+                 .map {|r| r['repo'].split('/')[0] }
+                 .uniq
+    crawl.uniq.flatten.map do |org|
+      Util.github_repos_with_fsh_for_user(org).map { |r| Repo.new(org, r) }
+    end.flatten
   end
 end
 
-# Crawls all repos for a given GitHub org
-class RepoSourceGitHubOrgs < RepoSource
+class RepoSourceGitHubOrgsWithClone < RepoSource
   def self.repos
-    # TODO: Move this to a YAML file
-    [
-      'HL7',
-      'hl7dk',
-      'HL7NZ',
-      'hl7-eu',
-      'who-int',
-      'openhie'
-    ].map do |org|
-      Util.github_repos_for_user(org).map { |r| Repo.new(org, r) }
-    end.flatten
+    crawl = YAML.load_file('settings.yml')['crawl_orgs']
+
+    crawl << JSON.parse(HTTParty.get('https://build.fhir.org/ig/qas.json', verify: false).body)
+                 .map {|r| r['repo'].split('/')[0] }
+                 .uniq
+    crawl = crawl. uniq.flatten
+
+    repos = Concurrent::Array.new()
+    pool = Concurrent::FixedThreadPool.new(10)
+    crawl.each do |org|
+      pool.post do
+        repos << Util.github_repos_for_user(org)
+      end
+    end
+
+    pool.shutdown
+    pool.wait_for_termination
+    return repos.flatten
+  end
+end
+
+
+class RepoSourceTest < RepoSource
+  def self.repos
+    [Util.github_repos_for_user('SaraAlert'), Util.github_repos_for_user('dvci')].flatten
   end
 end

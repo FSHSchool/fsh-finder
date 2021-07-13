@@ -2,6 +2,7 @@ require 'util'
 require 'repo'
 require 'support/git_support'
 
+
 RSpec.describe Util do
   include_context :git_objects
   context 'when checking for GitHub path existence' do
@@ -46,6 +47,49 @@ RSpec.describe Util do
   context 'when making a request to GitHub' do
     it 'should be authorized' do
       expect( Util.github_check_auth.code).to be 200
+    end
+  end
+
+  context 'when searching for all FSH in a user\'s repos' do
+    it 'should return Sara Alert' do
+      expect(Util.github_repos_with_fsh_for_user('SaraAlert')).to include('saraalert-fhir-ig')
+    end
+    it 'should return mCODE' do
+      expect(Util.github_repos_with_fsh_for_user('HL7')).to include('fhir-mCODE-ig')
+    end
+    it 'should fail gracefully for a nonexistent user' do
+      Util.github_repos_for_user('not-actually-a-real-user-9262047902')
+    end
+  end
+
+  context 'when cloning a git repo' do
+    it 'should successfully clone a valid repo' do
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      expect(File.file?(File.join(folder, '_genonce.sh'))).to be(true)
+    end
+
+    it 'should successfully update a valid repo' do
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      folder = Util.git_clone('HL7', 'fhir-mCODE-ig')
+      expect(File.file?(File.join(folder, '_genonce.sh'))).to be(true)
+    end
+
+    it 'should fail to clone an invalid repo' do
+      expect {
+        folder = Util.git_clone('HL7', 'not-actually-a-real-repo')
+      }.to raise_error(Util::GitCloneError)
+    end
+
+    it 'should gracefully fail to clone an empty repo' do
+      folder = Repo.new('masnick', 'fsh-finder-test-empty').folder
+    end
+
+    it 'should be able to find a file' do
+      expect(Util.git_file_exists?(@repo_mcode, 'input/fsh/*.fsh')).to be(true)
+    end
+
+    it 'should not be able to find a file that isn\'t there' do
+      expect(Util.git_file_exists?(@repo_mcode, 'input/fsh/*.not-actually-a-file')).to be(false)
     end
   end
 end

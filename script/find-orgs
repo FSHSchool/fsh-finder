@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+
+# Add `lib/` folder to load path for `require()`
+libdir = File.expand_path('../lib', File.dirname(__FILE__))
+$LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
+
+require 'util'
+
+# Expects STDIN of newline delimited org+repo combinations like `some-org/some-repo` or `some-user/some-repo`
+
+input = ARGF.read
+# input = File.read('/Users/mmasnick/Documents/OneDrive Sync/OneDrive - The MITRE Corporation/Shared/FSH repos.txt')
+
+# Exclude the following users that are individuals rather than organizations, who are known to have FSH
+# in their GitHub repos (based on GitHub searches of public repos)
+individuals = %w(
+  barbrov
+  costateixeira
+  daniel-thomson
+  danka74
+  davidhay25
+  DavidPyke
+  gcangioli
+  goelalex
+  jamlung-ri
+  jembi
+  johnk
+  JohnMoehrke
+  Kiennh
+  liberaliscomputing
+  masnick
+  mgraauw
+  mukundanps
+  mvonsieb
+  patrick-werner
+  saulakravitz
+  swmuir
+  tmh-mjolner
+  wardweistra
+  wfharty3
+)
+
+users = {}
+
+input.split("\n").each do |line|
+  (user, repo) = line.split('/')
+
+  next if individuals.include? user
+
+  if users.include?(user)
+    users[user][:repos] += 1
+  else
+    response = Util.github_get("https://api.github.com/users/#{user}")
+
+    users[user] = { username: user, name: response['name'], company: response['company'], blog: response['blog'], repos: 1 }
+  end
+end
+
+require 'csv'
+
+csv_string = CSV.generate do |csv|
+  keys = users.values.first.keys
+  csv << keys
+  users.values.each do |h|
+    csv << h.values_at(*keys)
+  end
+end
+
+puts csv_string
