@@ -40,7 +40,10 @@ RSpec.describe Util do
 
   context 'when getting repos for a user' do
     it 'should return some repos' do
-      expect(Util.github_repos_for_user('masnick')).to include @repo_fsh_positive.name
+      expect(Util.github_repos_for_user('masnick')).to include @repo_fsh_positive
+    end
+    it 'should return mCODE for HL7' do
+      expect(Util.github_repos_for_user('hl7')).to include @repo_mcode
     end
   end
 

@@ -91,7 +91,7 @@ class RepoSourceGitHubOrgsWithClone < RepoSource
     crawl << JSON.parse(HTTParty.get('https://build.fhir.org/ig/qas.json', verify: false).body)
                  .map {|r| r['repo'].split('/')[0] }
                  .uniq
-    crawl = crawl. uniq.flatten
+    crawl = crawl.uniq.flatten
 
     repos = Concurrent::Array.new()
     pool = Concurrent::FixedThreadPool.new(10)

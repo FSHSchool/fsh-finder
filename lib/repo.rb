@@ -205,6 +205,10 @@ class Repo
     other.updated_at <=> updated_at
   end
 
+  def ==(other)
+    self.identifier == other.identifier
+  end
+
   # Ensures that the passed Feature classes have been assessed
   # @param required_features [Array<FeatureBase>]
   # @return [void]

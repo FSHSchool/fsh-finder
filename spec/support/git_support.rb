@@ -2,7 +2,7 @@ require 'repo'
 
 RSpec.shared_context :git_objects do
   before do
-    @repo_mcode = Repo.new('HL7', 'fhir-mCODE-ig')
+    @repo_mcode = Repo.new('hl7', 'fhir-mCODE-ig')
     @ref_mcode_default_branch = 'master'
     @ref_mcode_old_fsh = '3e9ae7f42adb535495c0951d7a1aad61e9b1437f'
 

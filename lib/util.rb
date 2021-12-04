@@ -92,21 +92,25 @@ class Util
   def self.github_repos_for_user(user)
     url = "https://api.github.com/users/#{user}/repos"
     repos = []
+    page = 1
     loop do
       begin
-        response = github_get(url, { query: { per_page: 100, page: repos.length + 1 } })
+        response = github_get(url, { query: { per_page: 100, page: page } })
       rescue GitHub404Error
         logger.info("GitHub user <#{user}> not found")
         return []
       end
       parsed = JSON.parse(response.body)
+      raw_number_parsed = parsed.length
+
       # Ignore forks, ignore empty repos (size = 0)
       parsed.select! { |p| p['fork'] == false && p['size'] > 0 }
       repos << parsed.map { |r| Repo.new(user, r['name'], default_branch: r['default_branch'], updated_at: r['updated_at']) }
 
-      break if parsed.length < 100
+      break if raw_number_parsed < 100
+      page += 1
     end
-    return repos
+    return repos.flatten
   end
 
   def self.github_check_auth
