@@ -26,7 +26,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for all branches - needed for the worktree with `public`
 
-      - uses: ruby/setup-ruby@latest
+      - uses: ruby/setup-ruby@v3
       - run: bundle install
 
       # Insert secrets into environment
