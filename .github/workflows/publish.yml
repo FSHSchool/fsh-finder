@@ -26,9 +26,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for all branches - needed for the worktree with `public`
 
-      - uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
-        with:
-          ruby-version: 2.6 # Not needed with a .ruby-version file
+      - uses: ruby/setup-ruby
       - run: bundle install
 
       # Insert secrets into environment
@@ -58,4 +56,3 @@ jobs:
           GIT_SSH_COMMAND='ssh -i ' git push -u origin public
           cd ..
           git worktree remove public
-
